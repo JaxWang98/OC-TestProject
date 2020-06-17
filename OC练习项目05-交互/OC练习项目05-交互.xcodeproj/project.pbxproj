@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C43BBBD82491DB46006DDD6F /* Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C43BBBD72491DB45006DDD6F /* Blocks.m */; };
 		C4947C6D24908B1F00928B5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4947C6C24908B1F00928B5C /* AppDelegate.m */; };
 		C4947C7824908B2000928B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4947C7724908B2000928B5C /* Assets.xcassets */; };
 		C4947C7B24908B2000928B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4947C7924908B2000928B5C /* LaunchScreen.storyboard */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C43BBBD72491DB45006DDD6F /* Blocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blocks.m; sourceTree = "<group>"; };
 		C4947C6824908B1F00928B5C /* OC练习项目05-交互.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OC练习项目05-交互.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4947C6B24908B1F00928B5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4947C6C24908B1F00928B5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				C4947C912490BF2900928B5C /* WebViewController.m */,
 				C4947C932491C7BC00928B5C /* DeleteView.h */,
 				C4947C942491C7BC00928B5C /* DeleteView.m */,
-				C43BBBD72491DB45006DDD6F /* Blocks.m */,
 				C4B51B94249212A900900824 /* person.h */,
 				C4B51B95249212A900900824 /* person.m */,
 			);
@@ -197,7 +194,6 @@
 				C4947C8F24908BC300928B5C /* TabiewController.m in Sources */,
 				C4947C952491C7BC00928B5C /* DeleteView.m in Sources */,
 				C4947C922490BF2900928B5C /* WebViewController.m in Sources */,
-				C43BBBD82491DB46006DDD6F /* Blocks.m in Sources */,
 				C4947C6D24908B1F00928B5C /* AppDelegate.m in Sources */,
 				C4947C8C24908BC300928B5C /* MyTabCell.m in Sources */,
 				C4B51B96249212A900900824 /* person.m in Sources */,
