@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C43BBBD82491DB46006DDD6F /* Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C43BBBD72491DB45006DDD6F /* Blocks.m */; };
 		C4947C6D24908B1F00928B5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4947C6C24908B1F00928B5C /* AppDelegate.m */; };
 		C4947C7824908B2000928B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4947C7724908B2000928B5C /* Assets.xcassets */; };
 		C4947C7B24908B2000928B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4947C7924908B2000928B5C /* LaunchScreen.storyboard */; };
@@ -19,10 +18,15 @@
 		C4947C922490BF2900928B5C /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4947C912490BF2900928B5C /* WebViewController.m */; };
 		C4947C952491C7BC00928B5C /* DeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4947C942491C7BC00928B5C /* DeleteView.m */; };
 		C4B51B96249212A900900824 /* person.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B51B95249212A900900824 /* person.m */; };
+		C4B51B99249323DE00900824 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B51B98249323DE00900824 /* Person.m */; };
+		C546C7E624A2E71000F22553 /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C7E524A2E71000F22553 /* ListLoader.m */; };
+		C563587024A3228C00EED62D /* TabViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C563586F24A3228C00EED62D /* TabViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C43BBBD72491DB45006DDD6F /* Blocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blocks.m; sourceTree = "<group>"; };
+		1AEB1875FAD11CBCEFC12C45 /* Pods-OC练习项目05-交互.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC练习项目05-交互.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC练习项目05-交互/Pods-OC练习项目05-交互.debug.xcconfig"; sourceTree = "<group>"; };
+		85FFD68E22A86994BCAB78D1 /* Pods-OC练习项目05-交互.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC练习项目05-交互.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC练习项目05-交互/Pods-OC练习项目05-交互.release.xcconfig"; sourceTree = "<group>"; };
+		ADCAA8A7A9DD637105B0A148 /* Pods_OC____05___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_OC____05___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4947C6824908B1F00928B5C /* OC练习项目05-交互.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OC练习项目05-交互.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4947C6B24908B1F00928B5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4947C6C24908B1F00928B5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,6 +48,12 @@
 		C4947C942491C7BC00928B5C /* DeleteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteView.m; sourceTree = "<group>"; };
 		C4B51B94249212A900900824 /* person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
 		C4B51B95249212A900900824 /* person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = person.m; sourceTree = "<group>"; };
+		C4B51B97249323DE00900824 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		C4B51B98249323DE00900824 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		C546C7E424A2E71000F22553 /* ListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListLoader.h; sourceTree = "<group>"; };
+		C546C7E524A2E71000F22553 /* ListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListLoader.m; sourceTree = "<group>"; };
+		C563586E24A3228C00EED62D /* TabViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabViewModel.h; sourceTree = "<group>"; };
+		C563586F24A3228C00EED62D /* TabViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C43BBBD924920433006DDD6F /* News */ = {
+		9DDE4AE59804EEC0B455E49F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADCAA8A7A9DD637105B0A148 /* Pods_OC____05___.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C43BBBD924920433006DDD6F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C563586D24A2FA3900EED62D /* ViewController */,
+				C563586C24A2FA1400EED62D /* View */,
+				C563586B24A2F9FF00EED62D /* Model */,
 				C43BBBDB24920476006DDD6F /* details */,
 				C43BBBDA24920460006DDD6F /* List */,
-				C4947C8724908BC300928B5C /* MyTabCell.h */,
-				C4947C8524908BC300928B5C /* MyTabCell.m */,
-				C4947C8B24908BC300928B5C /* TabiewController.h */,
-				C4947C8624908BC300928B5C /* TabiewController.m */,
 			);
-			path = News;
+			path = "\U000eNews";
 			sourceTree = "<group>";
 		};
 		C43BBBDA24920460006DDD6F /* List */ = {
@@ -84,7 +101,6 @@
 				C4947C912490BF2900928B5C /* WebViewController.m */,
 				C4947C932491C7BC00928B5C /* DeleteView.h */,
 				C4947C942491C7BC00928B5C /* DeleteView.m */,
-				C43BBBD72491DB45006DDD6F /* Blocks.m */,
 				C4B51B94249212A900900824 /* person.h */,
 				C4B51B95249212A900900824 /* person.m */,
 			);
@@ -96,6 +112,8 @@
 			children = (
 				C4947C6A24908B1F00928B5C /* OC练习项目05-交互 */,
 				C4947C6924908B1F00928B5C /* Products */,
+				C684DCF737C65F45D013D876 /* Pods */,
+				9DDE4AE59804EEC0B455E49F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +130,7 @@
 			children = (
 				C4947C6B24908B1F00928B5C /* AppDelegate.h */,
 				C4947C6C24908B1F00928B5C /* AppDelegate.m */,
-				C43BBBD924920433006DDD6F /* News */,
+				C43BBBD924920433006DDD6F /* News */,
 				C4947C8424908BC300928B5C /* CollectionViewController.h */,
 				C4947C8824908BC300928B5C /* CollectionViewController.m */,
 				C4947C8A24908BC300928B5C /* ScrollViewController.h */,
@@ -121,8 +139,57 @@
 				C4947C7924908B2000928B5C /* LaunchScreen.storyboard */,
 				C4947C7C24908B2000928B5C /* Info.plist */,
 				C4947C7D24908B2000928B5C /* main.m */,
+				C4B51B97249323DE00900824 /* Person.h */,
+				C4B51B98249323DE00900824 /* Person.m */,
 			);
 			path = "OC练习项目05-交互";
+			sourceTree = "<group>";
+		};
+		C546C7E324A2E63B00F22553 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				C546C7E424A2E71000F22553 /* ListLoader.h */,
+				C546C7E524A2E71000F22553 /* ListLoader.m */,
+			);
+			name = Loader;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C563586B24A2F9FF00EED62D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C546C7E324A2E63B00F22553 /* Loader */,
+				C563586E24A3228C00EED62D /* TabViewModel.h */,
+				C563586F24A3228C00EED62D /* TabViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C563586C24A2FA1400EED62D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4947C8524908BC300928B5C /* MyTabCell.m */,
+				C4947C8724908BC300928B5C /* MyTabCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C563586D24A2FA3900EED62D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C4947C8B24908BC300928B5C /* TabiewController.h */,
+				C4947C8624908BC300928B5C /* TabiewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C684DCF737C65F45D013D876 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AEB1875FAD11CBCEFC12C45 /* Pods-OC练习项目05-交互.debug.xcconfig */,
+				85FFD68E22A86994BCAB78D1 /* Pods-OC练习项目05-交互.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4947C8124908B2000928B5C /* Build configuration list for PBXNativeTarget "OC练习项目05-交互" */;
 			buildPhases = (
+				C4B1DB98157A460F28F8CF02 /* [CP] Check Pods Manifest.lock */,
 				C4947C6424908B1F00928B5C /* Sources */,
 				C4947C6524908B1F00928B5C /* Frameworks */,
 				C4947C6624908B1F00928B5C /* Resources */,
+				7180065965329D60A6C5E77A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,15 +258,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7180065965329D60A6C5E77A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OC练习项目05-交互/Pods-OC练习项目05-交互-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OC练习项目05-交互/Pods-OC练习项目05-交互-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4B1DB98157A460F28F8CF02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OC练习项目05-交互-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4947C6424908B1F00928B5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C563587024A3228C00EED62D /* TabViewModel.m in Sources */,
 				C4947C8F24908BC300928B5C /* TabiewController.m in Sources */,
 				C4947C952491C7BC00928B5C /* DeleteView.m in Sources */,
+				C546C7E624A2E71000F22553 /* ListLoader.m in Sources */,
+				C4B51B99249323DE00900824 /* Person.m in Sources */,
 				C4947C922490BF2900928B5C /* WebViewController.m in Sources */,
-				C43BBBD82491DB46006DDD6F /* Blocks.m in Sources */,
 				C4947C6D24908B1F00928B5C /* AppDelegate.m in Sources */,
 				C4947C8C24908BC300928B5C /* MyTabCell.m in Sources */,
 				C4B51B96249212A900900824 /* person.m in Sources */,
@@ -333,6 +443,7 @@
 		};
 		C4947C8224908B2000928B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AEB1875FAD11CBCEFC12C45 /* Pods-OC练习项目05-交互.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -349,6 +460,7 @@
 		};
 		C4947C8324908B2000928B5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85FFD68E22A86994BCAB78D1 /* Pods-OC练习项目05-交互.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
