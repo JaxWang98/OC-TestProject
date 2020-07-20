@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9B11A2FC-3CAF-4C2E-BD05-09BFA2D8D0C8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "C743A155-0218-4C49-AF27-5D5C9837CBA8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EB872E2-2D2F-4DFE-835E-9244B6835EAC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDetailCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-setUIData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B668D82D-F36A-4E58-8F99-3458AE3A63B4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDetailCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-initWithStyle:reuseIdentifier:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22CC379E-A097-4372-A260-1127AD1AE1E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsItemCell.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-deleteButtonClick"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-showDeleteViewFromPoint:withBlock:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - 12074ab9c95d2d46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZJNewsDeleteView showDeleteViewFromPoint:withBlock:]"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "447">
+               </Location>
+               <Location
+                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - dc3745fb7aaec14b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__54-[ZJNewsDeleteView showDeleteViewFromPoint:withBlock:]_block_invoke"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A16CEB6-6655-4C9D-888D-6D485E35BEEA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-showDeleteViewFromPoint:withBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-tableViewCell:clickBtn:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - 2b7bd2c3ae7287b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZJNewsListViewController tableViewCell:clickBtn:]"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "570">
+               </Location>
+               <Location
+                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - 566c517f3342852c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__51-[ZJNewsListViewController tableViewCell:clickBtn:]_block_invoke"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "33">
+               </Location>
+               <Location
+                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - ede260e9d72c545d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_e8_32s40w"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9863B20-F1C0-48D6-A051-5E86FA310DCB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-tableViewCell:clickBtn:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B8F5FB6-47D7-4A49-8794-138FD53B568E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-setUpUI"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10C825A2-C461-4CD5-8A77-EFA83F3357A2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoRecommend/Controller/ZJRecommendViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "677804CF-CBEE-40AD-9DF8-C860C658BB36"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoRecommend/Controller/ZJRecommendViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18D823BC-A505-4B0C-8FE5-CA0527CBE454"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZJDemoProduct_OC/ZJDemoRecommend/Controller/ZJRecommendViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "-scrollView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
