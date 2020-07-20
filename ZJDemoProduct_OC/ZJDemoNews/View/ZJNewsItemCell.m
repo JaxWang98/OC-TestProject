@@ -21,25 +21,7 @@
 
 @implementation ZJNewsItemCell
 
-//- (instancetype)init
-//{
-//    self = [super init];
-//    if (self) {
-//        [self setUpUI];
-//        [self layOutUI];
-//    }
-//    return self;
-//}
 
-//- (instancetype)initWithFrame:(CGRect)frame
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//        [self setUpUI];
-//        [self layOutUI];
-//    }
-//    return self;
-//}
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {

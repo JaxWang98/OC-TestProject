@@ -58,8 +58,8 @@
             filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsItemCell.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-deleteButtonClick"
             landmarkType = "7">
          </BreakpointContent>
@@ -80,14 +80,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - 12074ab9c95d2d46"
+                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - c466034d5b8a0356"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[ZJNewsDeleteView showDeleteViewFromPoint:withBlock:]"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -95,14 +95,14 @@
                   offsetFromSymbolStart = "447">
                </Location>
                <Location
-                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - dc3745fb7aaec14b"
+                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - a560c0fe879ef5b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__54-[ZJNewsDeleteView showDeleteViewFromPoint:withBlock:]_block_invoke"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -138,54 +138,54 @@
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "-tableViewCell:clickBtn:"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - 2b7bd2c3ae7287b6"
+                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - ef8bca2505bb4a45"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[ZJNewsListViewController tableViewCell:clickBtn:]"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
                   offsetFromSymbolStart = "570">
                </Location>
                <Location
-                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - 566c517f3342852c"
+                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - 929c4999988b48df"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__51-[ZJNewsListViewController tableViewCell:clickBtn:]_block_invoke"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
                   offsetFromSymbolStart = "33">
                </Location>
                <Location
-                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - ede260e9d72c545d"
+                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - 2912780f7ce599ae"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__destroy_helper_block_e8_32s40w"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Documents/LearnOC/ZJDemoProduct_OC/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
@@ -201,8 +201,8 @@
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "-tableViewCell:clickBtn:"
             landmarkType = "7">
          </BreakpointContent>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EEAB564373B526220DE1D97 /* Pods_ZJDemoProduct_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */; };
 		C551C23924BEEF7F00BD5C49 /* ZJNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C551C23824BEEF7F00BD5C49 /* ZJNewsDetailViewController.m */; };
 		C56F8BE824C573DF004B50B1 /* ZJNewsDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BE724C573DF004B50B1 /* ZJNewsDeleteView.m */; };
 		C5B45E5824BEABFB0091B7ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E5724BEABFB0091B7ED /* AppDelegate.m */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJDemoProduct_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8525AE29A138B6294060611C /* Pods-ZJDemoProduct_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJDemoProduct_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC.debug.xcconfig"; sourceTree = "<group>"; };
 		C551C23724BEEF7F00BD5C49 /* ZJNewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNewsDetailViewController.h; sourceTree = "<group>"; };
 		C551C23824BEEF7F00BD5C49 /* ZJNewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJNewsDetailViewController.m; sourceTree = "<group>"; };
 		C56F8BE624C573DF004B50B1 /* ZJNewsDeleteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNewsDeleteView.h; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		C5B45E8C24BED7DB0091B7ED /* ZJNewsListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJNewsListLoader.m; sourceTree = "<group>"; };
 		C5B45E8E24BED98A0091B7ED /* ZJNewsItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNewsItemCell.h; sourceTree = "<group>"; };
 		C5B45E8F24BED98A0091B7ED /* ZJNewsItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJNewsItemCell.m; sourceTree = "<group>"; };
+		CDC2B18FA402FCE7BDAF3536 /* Pods-ZJDemoProduct_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJDemoProduct_OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +56,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EEAB564373B526220DE1D97 /* Pods_ZJDemoProduct_OC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C40B4D2E8845D8BFD75D619 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8525AE29A138B6294060611C /* Pods-ZJDemoProduct_OC.debug.xcconfig */,
+				CDC2B18FA402FCE7BDAF3536 /* Pods-ZJDemoProduct_OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B67600C9C93B3C6115CE35FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C56F8BE924C594B8004B50B1 /* Loder */ = {
+			isa = PBXGroup;
+			children = (
+				C5B45E8B24BED7DB0091B7ED /* ZJNewsListLoader.h */,
+				C5B45E8C24BED7DB0091B7ED /* ZJNewsListLoader.m */,
+			);
+			path = Loder;
+			sourceTree = "<group>";
+		};
 		C5B45E4A24BEABFB0091B7ED = {
 			isa = PBXGroup;
 			children = (
 				C5B45E5524BEABFB0091B7ED /* ZJDemoProduct_OC */,
 				C5B45E5424BEABFB0091B7ED /* Products */,
+				4C40B4D2E8845D8BFD75D619 /* Pods */,
+				B67600C9C93B3C6115CE35FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,8 +167,7 @@
 		C5B45E7324BEAD670091B7ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C5B45E8B24BED7DB0091B7ED /* ZJNewsListLoader.h */,
-				C5B45E8C24BED7DB0091B7ED /* ZJNewsListLoader.m */,
+				C56F8BE924C594B8004B50B1 /* Loder */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5B45E6C24BEABFC0091B7ED /* Build configuration list for PBXNativeTarget "ZJDemoProduct_OC" */;
 			buildPhases = (
+				E0E147135EF1E23C68EDB89E /* [CP] Check Pods Manifest.lock */,
 				C5B45E4F24BEABFB0091B7ED /* Sources */,
 				C5B45E5024BEABFB0091B7ED /* Frameworks */,
 				C5B45E5124BEABFB0091B7ED /* Resources */,
+				AE0FCEF12C2DC7408D5538F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,6 +328,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE0FCEF12C2DC7408D5538F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E147135EF1E23C68EDB89E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZJDemoProduct_OC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5B45E4F24BEABFB0091B7ED /* Sources */ = {
@@ -439,35 +512,39 @@
 		};
 		C5B45E6D24BEABFC0091B7ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8525AE29A138B6294060611C /* Pods-ZJDemoProduct_OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35YLJ32MBS;
 				INFOPLIST_FILE = ZJDemoProduct_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.wilderness.ZJDemoProduct-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C5B45E6E24BEABFC0091B7ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC2B18FA402FCE7BDAF3536 /* Pods-ZJDemoProduct_OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35YLJ32MBS;
 				INFOPLIST_FILE = ZJDemoProduct_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.wilderness.ZJDemoProduct-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

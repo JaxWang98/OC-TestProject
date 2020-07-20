@@ -24,6 +24,7 @@ const NSString *tabID = @"tabID";
 //UI控件
 @property (nonatomic, strong) UITableView *newsTab;
 
+
 @end
 
 @implementation ZJNewsListViewController
@@ -48,6 +49,7 @@ const NSString *tabID = @"tabID";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setUpUI];
+    [self getNewsList];
 }
 
 #pragma mark -- UI
@@ -57,6 +59,12 @@ const NSString *tabID = @"tabID";
 }
 
 - (void)layOutUI {
+}
+
+#pragma mark -- NetWork
+- (void)getNewsList{
+    self.listLoader = [[ZJNewsListLoader alloc]init];
+    [self.listLoader loadListData];
 }
 
 #pragma mark -- TableViewDelegate & DataSource
