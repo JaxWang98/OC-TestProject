@@ -28,9 +28,8 @@
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:listURL completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error) {
         
-//        NSError *__autoreleasing  _Nullable  *jsonErro;
-        NSError *jsonError;
-        id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+//        id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+        id jsonObj =[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
         
         NSLog(@"请求完毕");
     }];

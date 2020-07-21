@@ -140,12 +140,13 @@
 
 - (UIButton *)btn {
     if (!_btn) {
-        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(200, 100, 30, 20)];
-        btn.backgroundColor = [UIColor redColor];
+        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(200, 100, 30, 15)];
+        btn.backgroundColor = [UIColor whiteColor];
         [btn setTitle:@"X" forState:UIControlStateNormal];
         [btn setTitle:@"Y" forState:UIControlStateHighlighted];
         [btn addTarget:self action:@selector(deleteButtonClick) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        btn.titleLabel.font = [UIFont systemFontOfSize:13];
 
         btn.layer.cornerRadius = 5;
         btn.layer.masksToBounds = YES;
