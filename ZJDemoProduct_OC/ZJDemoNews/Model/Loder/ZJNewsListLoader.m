@@ -8,29 +8,33 @@
 
 #import "ZJNewsListLoader.h"
 #import "AFNetworking.h"
+#import "ZJNewsListModel.h"
 
 @implementation ZJNewsListLoader
 
-- (void)loadListData {
+- (void)loadListDataWithFinishBlock:(ZJNewsLoaderFinishBlock)finishBlock {
     NSString *urlString = @"https://static001.geekbang.org/univer/classes/ios_dev/lession/45/toutiao.json";
-//    NSString *urlString = @"https://v.jube.cn/toutiao/index?type=top&key=97ad001bfcc2082e2eeaf798bad3d54e";
-
-//    [[AFHTTPSessionManager manager] GET:urlString parameters:nil headers:nil progress:^(NSProgress *_Nonnull downloadProgress) {
-//    } success:^(NSURLSessionDataTask *_Nonnull task, id _Nullable responseObject) {
-//        NSLog(@"success");
-//    } failure:^(NSURLSessionDataTask *_Nullable task, NSError *_Nonnull error) {
-//        NSLog(@"fail");
-//    }];
 
     NSURL *listURL = [NSURL URLWithString:urlString];
-    NSURLRequest *listRequest = [NSURLRequest requestWithURL:listURL];
 
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:listURL completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error) {
-        
 //        id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        id jsonObj =[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-        
+        id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
+#warning 类型检查
+        NSArray *dataArray =  [(NSDictionary *)(([(NSDictionary *)jsonObj objectForKey:@"result"])) objectForKey:@"data"];
+        NSMutableArray *listItemArray = [NSMutableArray array];
+        for (NSDictionary *dicItem in dataArray) {
+            ZJNewsListModel *listItem = [[ZJNewsListModel alloc]init];
+            [listItem configWithDictionary:dicItem];
+            [listItemArray addObject:listItem];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+                           if (finishBlock) {
+                               finishBlock(error == nil, listItemArray.copy);
+                           }
+                       });
+
         NSLog(@"请求完毕");
     }];
 

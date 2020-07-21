@@ -7,6 +7,7 @@
 //
 
 #import "ZJNewsItemCell.h"
+#import "ZJNewsListModel.h"
 @interface ZJNewsItemCell ()
 
 //UI控件
@@ -37,7 +38,7 @@
     [self.contentView addSubview:self.conmmentLab];
     [self.contentView addSubview:self.timeLab];
     [self.contentView addSubview:self.img];
-    [self.contentView addSubview:self.btn];
+//    [self.contentView addSubview:self.btn];
 }
 
 - (void)layOutUI {
@@ -48,6 +49,24 @@
     self.btn.frame = CGRectMake(self.img.frame.origin.x - self.btn.frame.size.width - 15, self.btn.frame.origin.y, self.btn.frame.size.width, self.btn.frame.size.height);
 }
 
+- (void)setCellDataWithModel:(ZJNewsListModel *)modelItem{
+    self.tittleLab.text = modelItem.title;
+    self.sourceLab.text = modelItem.author;
+    self.conmmentLab.text =modelItem.category;
+    self.timeLab.text = modelItem.date;
+    
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:modelItem.thumbnaiPicS]]];
+    self.img.image = image;
+    
+    [self.tittleLab sizeToFit];
+    [self.sourceLab sizeToFit];
+    [self.conmmentLab sizeToFit];
+    [self.timeLab sizeToFit];
+
+    
+}
+
+
 #pragma mark -- Action
 - (void)deleteButtonClick {
     NSLog(@"deletClick");
@@ -56,11 +75,6 @@
         [self.delegate tableViewCell:self clickBtn:self.btn];
     }
 }
-- (void)setUIData{
-    [self setUpUI];
-    [self layOutUI];
-}
-
 
 #pragma mark -- LazyLoad
 
@@ -69,8 +83,8 @@
         UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(20, 15, 250, 70)];
         lab.font = [UIFont systemFontOfSize:20 weight:UIFontWeightLight];
         lab.textColor = [UIColor blackColor];
-
         lab.text = @"结束二战以来最长关闭期 埃菲尔铁塔即将重新开放";
+        
         lab.numberOfLines = 0;
         lab.lineBreakMode = NSLineBreakByWordWrapping;
 
@@ -85,9 +99,8 @@
         //            self.sourceLab.backgroundColor = [UIColor redColor];
         lab.font = [UIFont systemFontOfSize:12 weight:UIFontWeightLight];
         lab.textColor = [UIColor grayColor];
-
         lab.text = @"王之杰";
-        [lab sizeToFit];
+        
 
         _sourceLab = lab;
     }
@@ -102,7 +115,8 @@
         lab.textColor = [UIColor grayColor];
 
         lab.text = @"28评论";
-        [lab sizeToFit];
+
+        
 
         _conmmentLab = lab;
     }
@@ -117,7 +131,7 @@
         lab.textColor = [UIColor grayColor];
 
         lab.text = @"3分钟前";
-        [lab sizeToFit];
+        
 
         _timeLab = lab;
     }
@@ -127,7 +141,6 @@
 - (UIImageView *)img {
     if (!_img) {
         UIImageView *img = [[UIImageView alloc]initWithFrame:CGRectMake(330, 15, 100, 90)];
-        img.backgroundColor = [UIColor redColor];
         img.contentMode = UIViewContentModeScaleAspectFill;
 
         img.image = [UIImage imageNamed:@"news_img_01"];

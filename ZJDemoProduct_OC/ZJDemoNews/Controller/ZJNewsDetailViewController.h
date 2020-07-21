@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJNewsDetailViewController : UIViewController
 
+
+- (instancetype)initWithURL:(NSString *)urlString;
+
 @end
 
 NS_ASSUME_NONNULL_END

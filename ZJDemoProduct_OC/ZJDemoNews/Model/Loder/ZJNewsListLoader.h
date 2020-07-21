@@ -9,13 +9,18 @@
  新闻列表数据请求
  */
 
+
 #import <Foundation/Foundation.h>
+@class ZJNewsListModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^ZJNewsLoaderFinishBlock)(BOOL success, NSArray<ZJNewsListModel *> *dataArray);
+
+
 @interface ZJNewsListLoader : NSObject
 
-- (void)loadListData;
+- (void)loadListDataWithFinishBlock:(ZJNewsLoaderFinishBlock)finishBlock;
 
 @end
 

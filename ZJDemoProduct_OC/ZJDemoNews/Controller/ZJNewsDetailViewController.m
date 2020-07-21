@@ -13,9 +13,21 @@
 
 @property(nonatomic,strong) WKWebView *webView; //网页
 @property(nonatomic,strong) UIProgressView *progressView; //进度条
+@property (nonatomic, copy) NSString *articleUrl;
 @end
 
 @implementation ZJNewsDetailViewController
+
+
+- (instancetype)initWithURL:(NSString *)urlString
+{
+    self = [super init];
+    if (self) {
+        self.articleUrl = urlString;
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +48,7 @@
     [self.view addSubview:self.webView];
     [self.view addSubview:self.progressView];
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com/"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.articleUrl]]];
     [self addObserver];
 }
 - (void)addObserver {

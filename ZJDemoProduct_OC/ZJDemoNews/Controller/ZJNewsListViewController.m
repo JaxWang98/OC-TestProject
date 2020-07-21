@@ -12,13 +12,14 @@
 #import "ZJNewsItemCell.h"
 #import "ZJNewsDetailViewController.h"
 #import "ZJNewsDeleteView.h"
+#import "ZJNewsListModel.h"
 
 const NSString *tabID = @"tabID";
 
 @interface ZJNewsListViewController () <UITableViewDelegate, UITableViewDataSource, ZJTableViewDelegate>
 
 //model
-@property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) ZJNewsListLoader *listLoader;
 
 //UI控件
@@ -36,10 +37,6 @@ const NSString *tabID = @"tabID";
         self.tabBarItem.title = @"新闻";
         self.tabBarItem.image = [UIImage imageNamed:@"tabbar_main_normal"];
 
-        //创建一个空数组
-        for (int i = 0; i < 20; i++) {
-            [self.dataArray addObject:@(i)];
-        }
     }
     return self;
 }
@@ -64,17 +61,26 @@ const NSString *tabID = @"tabID";
 #pragma mark -- NetWork
 - (void)getNewsList{
     self.listLoader = [[ZJNewsListLoader alloc]init];
-    [self.listLoader loadListData];
+    
+    __weak typeof(self)weakSelf = self;
+    [self.listLoader loadListDataWithFinishBlock:^(BOOL success, NSArray<ZJNewsListModel *> * _Nonnull dataArray) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        strongSelf.dataArray = dataArray;
+        [strongSelf.newsTab reloadData];
+    }];
+    
 }
 
 #pragma mark -- TableViewDelegate & DataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    ZJNewsItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
     ZJNewsItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
 
     cell.delegate = self;
 //    [cell setUIData];
-
+    
+    [cell setCellDataWithModel:[self.dataArray objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -83,7 +89,8 @@ const NSString *tabID = @"tabID";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ZJNewsDetailViewController *vc = [[ZJNewsDetailViewController alloc]init];
+    ZJNewsListModel *modelItem = [self.dataArray objectAtIndex:indexPath.row];
+    ZJNewsDetailViewController *vc = [[ZJNewsDetailViewController alloc]initWithURL:modelItem.url];
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.title = [NSString stringWithFormat:@"序号%ld", (long)indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
@@ -101,10 +108,10 @@ const NSString *tabID = @"tabID";
 
        __weak typeof(self) weakSelf = self;
        [deleteView showDeleteViewFromPoint:rect.origin withBlock:^{
-           NSLog(@"1");
-           __strong typeof(self) strongSelf = weakSelf;
-           [strongSelf.dataArray removeLastObject];
-           [strongSelf.newsTab deleteRowsAtIndexPaths:@[[strongSelf.newsTab indexPathForCell:cell]] withRowAnimation:UITableViewRowAnimationLeft];
+//           NSLog(@"1");
+//           __strong typeof(self) strongSelf = weakSelf;
+////           [strongSelf.dataArray removeLastObject];
+//           [strongSelf.newsTab deleteRowsAtIndexPaths:@[[strongSelf.newsTab indexPathForCell:cell]] withRowAnimation:UITableViewRowAnimationLeft];
        }];
        //通过delegate回调，得到了btn坐标
        //block回调，执行了删除函数

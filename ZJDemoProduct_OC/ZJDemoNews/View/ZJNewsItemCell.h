@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class ZJNewsListModel;//newsList的model
+
+
 @protocol ZJTableViewDelegate <NSObject>
 
 - (void)tableViewCell:(UITableViewCell *)cell clickBtn:(UIButton *)btn;
@@ -22,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<ZJTableViewDelegate> delegate;
 
 //设置UI数据
-- (void)setUIData;
+- (void)setCellDataWithModel:(ZJNewsListModel *)modelItem;
 @end
 
 NS_ASSUME_NONNULL_END
