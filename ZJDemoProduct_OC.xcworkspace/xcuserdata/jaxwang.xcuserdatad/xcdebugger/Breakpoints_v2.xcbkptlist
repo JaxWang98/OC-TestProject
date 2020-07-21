@@ -7,48 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "10E8EFF3-1320-4505-856F-DCF65B75C14C"
+            uuid = "6FE94612-9D89-4C98-956C-2A414BA5C6B6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "-loadListData"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-_getSandBoxPath"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D52C2774-0169-420B-87A6-7F9E421A9606"
+            uuid = "AACC7C81-2D18-4085-ABC8-E5C3588B58FE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "-loadListDataWithFinishBlock:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "80D16DD9-198D-4902-8216-9006A6F255F4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-getNewsList"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-_getSandBoxPath"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
