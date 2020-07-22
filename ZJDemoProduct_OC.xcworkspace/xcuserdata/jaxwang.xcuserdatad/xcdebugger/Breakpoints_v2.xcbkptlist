@@ -7,32 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6FE94612-9D89-4C98-956C-2A414BA5C6B6"
+            uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "-_getSandBoxPath"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-loadListDataWithFinishBlock:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B - 15b0c586d9a9d578"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[ZJNewsListLoader loadListDataWithFinishBlock:]_block_invoke"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "885">
+               </Location>
+               <Location
+                  uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B - 15b0c586d9a9d578"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[ZJNewsListLoader loadListDataWithFinishBlock:]_block_invoke"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "907">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AACC7C81-2D18-4085-ABC8-E5C3588B58FE"
-            shouldBeEnabled = "Yes"
+            uuid = "72C8C412-16DC-4292-85B6-4D6BB4DF393F"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "-_getSandBoxPath"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-_archiveListDtaWithArray:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

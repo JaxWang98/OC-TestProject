@@ -8,7 +8,44 @@
 
 #import "ZJNewsListModel.h"
 
+
 @implementation ZJNewsListModel
+// 解码/反序列化/解归档
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if (self) {
+        self.category = [aDecoder decodeObjectForKey:@"category"];
+        self.thumbnaiPicS =  [aDecoder  decodeObjectForKey:@"thumbnaiPicS"];
+        self.uniKey = [aDecoder  decodeObjectForKey:@"uniKey"];
+        self.title =  [aDecoder  decodeObjectForKey:@"title"];
+        self.date =  [aDecoder  decodeObjectForKey:@"date"];
+        self.author =  [aDecoder  decodeObjectForKey:@"author"];
+        self.thumbnailPicS03 =  [aDecoder  decodeObjectForKey:@"thumbnailPicS03"];
+        self.thumbnailPicS02 =  [aDecoder  decodeObjectForKey:@"thumbnailPicS02"];
+        self.url =  [aDecoder  decodeObjectForKey:@"url"];
+    }
+    return self;
+}
+
+// 编码/序列化/归档
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+    [coder encodeObject:self.category forKey:@"category"];
+    [coder encodeObject:self.thumbnaiPicS forKey:@"thumbnaiPicS"];
+    [coder encodeObject:self.uniKey forKey:@"uniKey"];
+    [coder encodeObject:self.title forKey:@"title"];
+    [coder encodeObject:self.date forKey:@"date"];
+    [coder encodeObject:self.author forKey:@"author"];
+    [coder encodeObject:self.thumbnailPicS03 forKey:@"thumbnailPicS03"];
+    [coder encodeObject:self.thumbnailPicS02 forKey:@"thumbnailPicS02"];
+    [coder encodeObject:self.url forKey:@"url"];
+
+
+}
++ (BOOL)supportsSecureCoding {
+    return  YES;
+}
 
 
 - (void)configWithDictionary:(NSDictionary *)dic {
