@@ -64,14 +64,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - 35cb6237f7f14c68"
+                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - c466034d5b8a0356"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[ZJNewsDeleteView showDeleteViewFromPoint:withBlock:]"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -79,14 +79,14 @@
                   offsetFromSymbolStart = "447">
                </Location>
                <Location
-                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - fbfb6d754402a065"
+                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - a560c0fe879ef5b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__54-[ZJNewsDeleteView showDeleteViewFromPoint:withBlock:]_block_invoke"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -128,14 +128,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - a2af22ac415acf92"
+                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - ef8bca2505bb4a45"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[ZJNewsListViewController tableViewCell:clickBtn:]"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "110"
@@ -143,14 +143,14 @@
                   offsetFromSymbolStart = "560">
                </Location>
                <Location
-                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - dfb8a110dc6acd08"
+                  uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5 - 929c4999988b48df"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__51-[ZJNewsListViewController tableViewCell:clickBtn:]_block_invoke"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "115"

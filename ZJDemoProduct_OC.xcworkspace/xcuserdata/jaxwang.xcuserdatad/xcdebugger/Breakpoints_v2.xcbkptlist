@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
@@ -20,34 +20,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B - 15b0c586d9a9d578"
+                  uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B - ac307d86b31198a7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__48-[ZJNewsListLoader loadListDataWithFinishBlock:]_block_invoke"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
                   endingLineNumber = "34"
-                  offsetFromSymbolStart = "885">
+                  offsetFromSymbolStart = "890">
                </Location>
                <Location
-                  uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B - 15b0c586d9a9d578"
+                  uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B - ac307d86b31198a7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__48-[ZJNewsListLoader loadListDataWithFinishBlock:]_block_invoke"
                   moduleName = "ZJDemoProduct_OC"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
                   endingLineNumber = "34"
-                  offsetFromSymbolStart = "907">
+                  offsetFromSymbolStart = "912">
                </Location>
             </Locations>
          </BreakpointContent>
