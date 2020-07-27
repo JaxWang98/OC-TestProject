@@ -7,48 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "10E8EFF3-1320-4505-856F-DCF65B75C14C"
+            uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "-loadListData"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D52C2774-0169-420B-87A6-7F9E421A9606"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "-loadListDataWithFinishBlock:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B - 15b0c586d9a9d578"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[ZJNewsListLoader loadListDataWithFinishBlock:]_block_invoke"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "885">
+               </Location>
+               <Location
+                  uuid = "54DA8660-50D5-4381-A6A1-53924F1F0D7B - 15b0c586d9a9d578"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[ZJNewsListLoader loadListDataWithFinishBlock:]_block_invoke"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Desktop/repo/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "907">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "80D16DD9-198D-4902-8216-9006A6F255F4"
-            shouldBeEnabled = "Yes"
+            uuid = "72C8C412-16DC-4292-85B6-4D6BB4DF393F"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+            filePath = "ZJDemoProduct_OC/ZJDemoNews/Model/Loder/ZJNewsListLoader.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-getNewsList"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-_archiveListDtaWithArray:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

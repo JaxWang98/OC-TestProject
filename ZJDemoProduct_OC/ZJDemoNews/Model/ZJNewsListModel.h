@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJNewsListModel : NSObject
+@interface ZJNewsListModel : NSObject<NSSecureCoding>
 
 @property (nonatomic, copy) NSString *category;
 @property (nonatomic, copy) NSString *thumbnaiPicS;
