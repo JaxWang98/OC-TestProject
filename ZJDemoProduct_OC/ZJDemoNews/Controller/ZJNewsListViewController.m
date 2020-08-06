@@ -94,6 +94,8 @@ const NSString *tabID = @"tabID";
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.title = [NSString stringWithFormat:@"序号%ld", (long)indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
+    
+//    [[NSUserDefaults standardUserDefaults]setBool:YES forKey:modelItem.uniKey];//已读
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

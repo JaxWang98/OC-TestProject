@@ -54,15 +54,26 @@
     self.sourceLab.text = modelItem.author;
     self.conmmentLab.text =modelItem.category;
     self.timeLab.text = modelItem.date;
-    
-    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:modelItem.thumbnaiPicS]]];
-    self.img.image = image;
-    
     [self.tittleLab sizeToFit];
     [self.sourceLab sizeToFit];
     [self.conmmentLab sizeToFit];
     [self.timeLab sizeToFit];
-
+    
+//    NSThread *downLoadImageThread = [[NSThread alloc]initWithBlock:^{
+//        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:modelItem.thumbnaiPicS]]];
+//        self.img.image = image; //图片加载被放到新的线程中
+//    }];
+//    downLoadImageThread.name = @"downLoadImageThread";
+//    [downLoadImageThread start];
+    
+    dispatch_queue_global_t downLoadQueue =  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
+    dispatch_async(downLoadQueue, ^{
+        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:modelItem.thumbnaiPicS]]];
+        dispatch_async(mainQueue, ^{
+            self.img.image = image; //UI线操作依然放到主线程中
+        });
+    });
     
 }
 
