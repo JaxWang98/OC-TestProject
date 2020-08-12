@@ -340,17 +340,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E0E147135EF1E23C68EDB89E /* [CP] Check Pods Manifest.lock */ = {
@@ -522,7 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35YLJ32MBS;
+				DEVELOPMENT_TEAM = WSJK7MN7ZH;
 				INFOPLIST_FILE = ZJDemoProduct_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,7 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35YLJ32MBS;
+				DEVELOPMENT_TEAM = WSJK7MN7ZH;
 				INFOPLIST_FILE = ZJDemoProduct_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

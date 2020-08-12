@@ -75,7 +75,7 @@
 
 - (WKWebView *)webView{
     if (!_webView) {
-        WKWebView *wView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 88, self.view.bounds.size
+        WKWebView *wView = [[WKWebView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size
         .width, self.view.bounds.size.height - 88 )];
 //        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com/"]]];
 
@@ -86,7 +86,7 @@
 }
 - (UIProgressView *)progressView{
     if (!_progressView) {
-        UIProgressView *view = [[UIProgressView alloc]initWithFrame:CGRectMake(0, 88, self.view.bounds.size.width, 20)];
+        UIProgressView *view = [[UIProgressView alloc]initWithFrame:CGRectMake(0, 68, self.view.bounds.size.width, 20)];
         _progressView = view;
     }
     return  _progressView;
