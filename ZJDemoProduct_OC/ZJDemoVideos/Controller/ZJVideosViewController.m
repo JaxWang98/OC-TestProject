@@ -7,8 +7,7 @@
 //
 
 #import "ZJVideosViewController.h"
-
-
+#import "ZJVideoCoverCell.h"
 
 @interface ZJVideosViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -22,7 +21,10 @@
     self = [super init];
     if (self) {
         self.tabBarItem.title = @"视频";
-        self.tabBarItem.image = [UIImage imageNamed:@"tabbar_main_rocket"];
+        self.tabBarItem.image = [UIImage imageNamed:@"video"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"video_selected"];
+
+        
     }
     return self;
 }
@@ -37,35 +39,26 @@
 - (void)setUpUI {
     self.view.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:self.collectionView];
-
 }
 
 - (void)layOutUI {
 }
 
-
 #pragma mark -- UIcollectionViewDelegate & DataSource
 
-- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewID" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    ZJVideoCoverCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"videoCellID" forIndexPath:indexPath];
+    if ([cell isKindOfClass:[ZJVideoCoverCell class]]) {
+        [cell setUpCellWithVideoCoverUrl:@"videoCover" andVideoUrl:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
+    }
+    
     return cell;
 }
 
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-        return 100;
+    return 100;
 }
 
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-    if (indexPath.item %3 == 0) {
-        return CGSizeMake(self.view.bounds.size.width, 300);
-    }
-    else{
-        return CGSizeMake((self.view.bounds.size.width -10)/2, 300);
-    }
-}
 
 
 #pragma mark -- LazyLoad
@@ -74,19 +67,18 @@
         UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
         flowLayout.minimumLineSpacing = 10;
         flowLayout.minimumInteritemSpacing = 10;
-        flowLayout.itemSize = CGSizeMake((self.view.bounds.size.width - 10) / 2, 300);
+        flowLayout.itemSize = CGSizeMake((self.view.bounds.size.width - 10), (self.view.bounds.size.width - 10) / 16 * 9);
         UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
-        
-        collectionView.backgroundColor = [UIColor whiteColor];
+
+        collectionView.backgroundColor = [UIColor blackColor];
         collectionView.dataSource = self;
         collectionView.delegate = self;
-        
+
         //cell注册
-        [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"collectionViewID"];
+        [collectionView registerClass:[ZJVideoCoverCell class] forCellWithReuseIdentifier:@"videoCellID"];
         _collectionView = collectionView;
     }
     return _collectionView;
 }
-
 
 @end

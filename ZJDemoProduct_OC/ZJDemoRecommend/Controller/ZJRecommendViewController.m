@@ -22,7 +22,8 @@
     self = [super init];
     if (self) {
         self.tabBarItem.title = @"推荐";
-        self.tabBarItem.image = [UIImage imageNamed:@"tabbar_userCenter_normal"];
+        self.tabBarItem.image = [UIImage imageNamed:@"like"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"like"];
     }
     return self;
 }

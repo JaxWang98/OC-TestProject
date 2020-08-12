@@ -60,16 +60,8 @@
     [self.conmmentLab sizeToFit];
     [self.timeLab sizeToFit];
 
-//    dispatch_queue_global_t downLoadQueue =  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-//    dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
-//    dispatch_async(downLoadQueue, ^{
-//        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:modelItem.thumbnaiPicS]]];
-//        dispatch_async(mainQueue, ^{
-//            self.img.image = image; //UI线操作依然放到主线程中
-//        });
-//    });
     [self.img sd_setImageWithURL:[NSURL URLWithString:modelItem.thumbnaiPicS] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-        NSLog(@"");
+        NSLog(@"图片请求");
     }];
     
 }

@@ -35,7 +35,9 @@ const NSString *tabID = @"tabID";
     self = [super init];
     if (self) {
         self.tabBarItem.title = @"新闻";
-        self.tabBarItem.image = [UIImage imageNamed:@"tabbar_main_normal"];
+        self.tabBarItem.image = [UIImage imageNamed:@"page"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"page_selected"];
+
 
     }
     return self;

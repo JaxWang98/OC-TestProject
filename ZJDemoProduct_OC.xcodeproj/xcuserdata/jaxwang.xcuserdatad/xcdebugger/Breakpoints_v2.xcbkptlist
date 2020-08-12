@@ -122,8 +122,8 @@
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "-tableViewCell:clickBtn:"
             landmarkType = "7">
             <Locations>
@@ -138,8 +138,8 @@
                   urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "112"
-                  endingLineNumber = "112"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
                   offsetFromSymbolStart = "328">
                </Location>
                <Location
@@ -153,8 +153,8 @@
                   urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
@@ -170,8 +170,8 @@
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "-tableViewCell:clickBtn:"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,8 +186,8 @@
             filePath = "ZJDemoProduct_OC/ZJDemoRecommend/Controller/ZJRecommendViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107">
+            startingLineNumber = "108"
+            endingLineNumber = "108">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -200,8 +200,8 @@
             filePath = "ZJDemoProduct_OC/ZJDemoRecommend/Controller/ZJRecommendViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107">
+            startingLineNumber = "108"
+            endingLineNumber = "108">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

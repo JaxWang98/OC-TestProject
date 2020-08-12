@@ -19,7 +19,8 @@
     self = [super init];
     if (self) {
         self.tabBarItem.title = @"我的";
-        self.tabBarItem.image = [UIImage imageNamed:@"tabbar_serviceCenter_normal"];
+        self.tabBarItem.image = [UIImage imageNamed:@"home"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"home_selected"];
     }
     return self;
 }
