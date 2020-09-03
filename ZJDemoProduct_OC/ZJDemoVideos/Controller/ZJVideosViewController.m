@@ -50,6 +50,9 @@
     ZJVideoCoverCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"videoCellID" forIndexPath:indexPath];
     if ([cell isKindOfClass:[ZJVideoCoverCell class]]) {
         [cell setUpCellWithVideoCoverUrl:@"videoCover" andVideoUrl:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
+//        [cell setUpCellWithVideoCoverUrl:@"videoCover" andVideoUrl:@"https://www.bilibili.com/video/BV1vK4y1Y7su"];
+
+         
     }
     
     return cell;

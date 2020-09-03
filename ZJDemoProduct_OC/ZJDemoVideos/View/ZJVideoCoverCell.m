@@ -32,10 +32,10 @@
 - (void)setUpUI {
     self.placeHolderImgView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     self.playView.frame = CGRectMake((self.frame.size.width - 50) / 2, (self.frame.size.height - 50) / 2, 50, 50);
-    
+
     [self addSubview:self.placeHolderImgView];
     [self addSubview:self.playView];
-    
+
     UITapGestureRecognizer *playTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(_didTapPlay)];
     [self addGestureRecognizer:playTap];
 }
@@ -48,22 +48,23 @@
 
 #pragma mark -- Action
 - (void)_didTapPlay {
-
+    NSLog(@"播放");
     //model
     NSURL *viedoURL = [NSURL URLWithString:self.videoURL];
     AVAsset *asset = [AVAsset assetWithURL:viedoURL];
     AVPlayerItem *videoItem = [AVPlayerItem playerItemWithAsset:asset];
-    
+
     //controller
     AVPlayer *avplayer = [AVPlayer playerWithPlayerItem:videoItem];
-    
+
     //view
     AVPlayerLayer *playerlayer = [AVPlayerLayer playerLayerWithPlayer:avplayer];
     playerlayer.frame = self.placeHolderImgView.bounds;
     
+    [self.layer addSublayer:playerlayer];
+
     [avplayer play];
 }
-
 
 #pragma mark -- lazy
 
