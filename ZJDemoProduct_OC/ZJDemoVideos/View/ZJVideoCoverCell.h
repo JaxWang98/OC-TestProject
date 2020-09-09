@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJVideoCoverCell : UICollectionViewCell
 
+
+
 - (void)setUpCellWithVideoCoverUrl:(NSString *)coverUrl
                        andVideoUrl:(NSString *)videoUrl;
 

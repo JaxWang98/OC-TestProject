@@ -5,15 +5,22 @@
 //  Created by jaxwang on 2020/8/12.
 //  Copyright © 2020 widerness. All rights reserved.
 //
+//
+//视频播放cell
+//
 
 #import "ZJVideoCoverCell.h"
 #import <AVFoundation/AVFoundation.h>
+#import "ZJVideoPlayer.h"
 
 @interface ZJVideoCoverCell ()
 
 @property (nonatomic, strong) UIImageView *placeHolderImgView;//占位图片
 @property (nonatomic, strong) UIImageView *playView;//播放view
 @property (nonatomic, copy) NSString *videoURL;
+
+
+
 
 @end
 
@@ -40,6 +47,7 @@
     [self addGestureRecognizer:playTap];
 }
 
+
 #pragma mark -- public
 - (void)setUpCellWithVideoCoverUrl:(NSString *)coverUrl andVideoUrl:(NSString *)videoUrl {
     self.placeHolderImgView.image = [UIImage imageNamed:coverUrl];
@@ -49,22 +57,11 @@
 #pragma mark -- Action
 - (void)_didTapPlay {
     NSLog(@"播放");
-    //model
-    NSURL *viedoURL = [NSURL URLWithString:self.videoURL];
-    AVAsset *asset = [AVAsset assetWithURL:viedoURL];
-    AVPlayerItem *videoItem = [AVPlayerItem playerItemWithAsset:asset];
-
-    //controller
-    AVPlayer *avplayer = [AVPlayer playerWithPlayerItem:videoItem];
-
-    //view
-    AVPlayerLayer *playerlayer = [AVPlayerLayer playerLayerWithPlayer:avplayer];
-    playerlayer.frame = self.placeHolderImgView.bounds;
-    
-    [self.layer addSublayer:playerlayer];
-
-    [avplayer play];
+    [[ZJVideoPlayer sharedPlayer] playVideoWithURL:self.videoURL andAttachView:self.placeHolderImgView];
+    [self.playView removeFromSuperview];
 }
+
+
 
 #pragma mark -- lazy
 
