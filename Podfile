@@ -8,4 +8,5 @@ target 'ZJDemoProduct_OC' do
   # Pods for ZJDemoProduct_OC
   pod 'AFNetworking'
   pod 'SDWebImage'
+  pod ‘Masonry’
 end

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		04B146C625092B5000232FC3 /* ZJVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B146C525092B5000232FC3 /* ZJVideoPlayer.m */; };
 		3EEAB564373B526220DE1D97 /* Pods_ZJDemoProduct_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */; };
+		C54948DA2521816100062195 /* ZJVideoTooBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54948D92521816100062195 /* ZJVideoTooBarView.m */; };
+		C54948DD2521847B00062195 /* ZJVideoToolBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C54948DC2521847B00062195 /* ZJVideoToolBarModel.m */; };
 		C551C23924BEEF7F00BD5C49 /* ZJNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C551C23824BEEF7F00BD5C49 /* ZJNewsDetailViewController.m */; };
 		C5528AA124E392DF00E2521B /* ZJVideoCoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5528AA024E392DF00E2521B /* ZJVideoCoverCell.m */; };
 		C55E3CA224C6C38300ADB2B7 /* ZJNewsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E3CA124C6C38300ADB2B7 /* ZJNewsListModel.m */; };
@@ -30,6 +32,10 @@
 		04B146C425092B5000232FC3 /* ZJVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJVideoPlayer.h; sourceTree = "<group>"; };
 		04B146C525092B5000232FC3 /* ZJVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVideoPlayer.m; sourceTree = "<group>"; };
 		8525AE29A138B6294060611C /* Pods-ZJDemoProduct_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJDemoProduct_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC.debug.xcconfig"; sourceTree = "<group>"; };
+		C54948D82521816100062195 /* ZJVideoTooBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJVideoTooBarView.h; sourceTree = "<group>"; };
+		C54948D92521816100062195 /* ZJVideoTooBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVideoTooBarView.m; sourceTree = "<group>"; };
+		C54948DB2521847B00062195 /* ZJVideoToolBarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJVideoToolBarModel.h; sourceTree = "<group>"; };
+		C54948DC2521847B00062195 /* ZJVideoToolBarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVideoToolBarModel.m; sourceTree = "<group>"; };
 		C551C23724BEEF7F00BD5C49 /* ZJNewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNewsDetailViewController.h; sourceTree = "<group>"; };
 		C551C23824BEEF7F00BD5C49 /* ZJNewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJNewsDetailViewController.m; sourceTree = "<group>"; };
 		C5528A9F24E392DF00E2521B /* ZJVideoCoverCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJVideoCoverCell.h; sourceTree = "<group>"; };
@@ -218,6 +224,8 @@
 		C5B45E7924BEADAC0091B7ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C54948DB2521847B00062195 /* ZJVideoToolBarModel.h */,
+				C54948DC2521847B00062195 /* ZJVideoToolBarModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +235,8 @@
 			children = (
 				C5528A9F24E392DF00E2521B /* ZJVideoCoverCell.h */,
 				C5528AA024E392DF00E2521B /* ZJVideoCoverCell.m */,
+				C54948D82521816100062195 /* ZJVideoTooBarView.h */,
+				C54948D92521816100062195 /* ZJVideoTooBarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,7 +416,9 @@
 				04B146C625092B5000232FC3 /* ZJVideoPlayer.m in Sources */,
 				C551C23924BEEF7F00BD5C49 /* ZJNewsDetailViewController.m in Sources */,
 				C5B45E8724BEAE2C0091B7ED /* ZJRecommendViewController.m in Sources */,
+				C54948DA2521816100062195 /* ZJVideoTooBarView.m in Sources */,
 				C55E3CA224C6C38300ADB2B7 /* ZJNewsListModel.m in Sources */,
+				C54948DD2521847B00062195 /* ZJVideoToolBarModel.m in Sources */,
 				C5B45E6924BEABFC0091B7ED /* main.m in Sources */,
 				C5B45E8A24BEAE9B0091B7ED /* ZJUserViewController.m in Sources */,
 				C5B45E8D24BED7DB0091B7ED /* ZJNewsListLoader.m in Sources */,
