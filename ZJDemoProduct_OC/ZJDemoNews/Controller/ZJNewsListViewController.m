@@ -25,7 +25,6 @@ const NSString *tabID = @"tabID";
 //UI控件
 @property (nonatomic, strong) UITableView *newsTab;
 
-
 @end
 
 @implementation ZJNewsListViewController
@@ -37,8 +36,6 @@ const NSString *tabID = @"tabID";
         self.tabBarItem.title = @"新闻";
         self.tabBarItem.image = [UIImage imageNamed:@"page"];
         self.tabBarItem.selectedImage = [UIImage imageNamed:@"page_selected"];
-
-
     }
     return self;
 }
@@ -61,16 +58,15 @@ const NSString *tabID = @"tabID";
 }
 
 #pragma mark -- NetWork
-- (void)getNewsList{
+- (void)getNewsList {
     self.listLoader = [[ZJNewsListLoader alloc]init];
-    
-    __weak typeof(self)weakSelf = self;
-    [self.listLoader loadListDataWithFinishBlock:^(BOOL success, NSArray<ZJNewsListModel *> * _Nonnull dataArray) {
+
+    __weak typeof(self) weakSelf = self;
+    [self.listLoader loadListDataWithFinishBlock:^(BOOL success, NSArray<ZJNewsListModel *> *_Nonnull dataArray) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
         strongSelf.dataArray = dataArray;
         [strongSelf.newsTab reloadData];
     }];
-    
 }
 
 #pragma mark -- TableViewDelegate & DataSource
@@ -81,7 +77,7 @@ const NSString *tabID = @"tabID";
 
     cell.delegate = self;
 //    [cell setUIData];
-    
+
     [cell setCellDataWithModel:[self.dataArray objectAtIndex:indexPath.row]];
     return cell;
 }
@@ -96,7 +92,7 @@ const NSString *tabID = @"tabID";
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.title = [NSString stringWithFormat:@"序号%ld", (long)indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
-    
+
 //    [[NSUserDefaults standardUserDefaults]setBool:YES forKey:modelItem.uniKey];//已读
 }
 
@@ -110,16 +106,15 @@ const NSString *tabID = @"tabID";
     ZJNewsDeleteView *deleteView = [[ZJNewsDeleteView alloc]initWithFrame:self.view.bounds];
     CGRect rect = [cell convertRect:btn.frame toView:nil]; //rect坐标转换，nil代表以window坐标为基准
 
-       __weak typeof(self) weakSelf = self;
-       [deleteView showDeleteViewFromPoint:rect.origin withBlock:^{
+    __weak typeof(self) weakSelf = self;
+    [deleteView showDeleteViewFromPoint:rect.origin withBlock:^{
 //           NSLog(@"1");
 //           __strong typeof(self) strongSelf = weakSelf;
 ////           [strongSelf.dataArray removeLastObject];
 //           [strongSelf.newsTab deleteRowsAtIndexPaths:@[[strongSelf.newsTab indexPathForCell:cell]] withRowAnimation:UITableViewRowAnimationLeft];
-       }];
-       //通过delegate回调，得到了btn坐标
-       //block回调，执行了删除函数
-    
+    }];
+    //通过delegate回调，得到了btn坐标
+    //block回调，执行了删除函数
 }
 
 #pragma mark -- LazyLoad

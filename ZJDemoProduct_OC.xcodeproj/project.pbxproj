@@ -15,6 +15,8 @@
 		C5528AA124E392DF00E2521B /* ZJVideoCoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5528AA024E392DF00E2521B /* ZJVideoCoverCell.m */; };
 		C55E3CA224C6C38300ADB2B7 /* ZJNewsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E3CA124C6C38300ADB2B7 /* ZJNewsListModel.m */; };
 		C56F8BE824C573DF004B50B1 /* ZJNewsDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = C56F8BE724C573DF004B50B1 /* ZJNewsDeleteView.m */; };
+		C57FFEBC25233C2E00C2C3D3 /* ZJVideoUIDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = C57FFEBB25233C2E00C2C3D3 /* ZJVideoUIDefines.m */; };
+		C57FFEC3252459F800C2C3D3 /* ZJScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C57FFEC2252459F800C2C3D3 /* ZJScreen.m */; };
 		C5B45E5824BEABFB0091B7ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E5724BEABFB0091B7ED /* AppDelegate.m */; };
 		C5B45E6324BEABFC0091B7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B45E6224BEABFC0091B7ED /* Assets.xcassets */; };
 		C5B45E6624BEABFC0091B7ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B45E6424BEABFC0091B7ED /* LaunchScreen.storyboard */; };
@@ -45,6 +47,10 @@
 		C55E3CA124C6C38300ADB2B7 /* ZJNewsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJNewsListModel.m; sourceTree = "<group>"; };
 		C56F8BE624C573DF004B50B1 /* ZJNewsDeleteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNewsDeleteView.h; sourceTree = "<group>"; };
 		C56F8BE724C573DF004B50B1 /* ZJNewsDeleteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJNewsDeleteView.m; sourceTree = "<group>"; };
+		C57FFEBA25233C2E00C2C3D3 /* ZJVideoUIDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJVideoUIDefines.h; sourceTree = "<group>"; };
+		C57FFEBB25233C2E00C2C3D3 /* ZJVideoUIDefines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVideoUIDefines.m; sourceTree = "<group>"; };
+		C57FFEC1252459F800C2C3D3 /* ZJScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJScreen.h; sourceTree = "<group>"; };
+		C57FFEC2252459F800C2C3D3 /* ZJScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJScreen.m; sourceTree = "<group>"; };
 		C5B45E5324BEABFB0091B7ED /* ZJDemoProduct_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDemoProduct_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B45E5624BEABFB0091B7ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5B45E5724BEABFB0091B7ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 		C5B45E5524BEABFB0091B7ED /* ZJDemoProduct_OC */ = {
 			isa = PBXGroup;
 			children = (
+				C57FFEC1252459F800C2C3D3 /* ZJScreen.h */,
+				C57FFEC2252459F800C2C3D3 /* ZJScreen.m */,
 				C5B45E6F24BEAD080091B7ED /* ZJDemoNews */,
 				C5B45E7024BEAD0D0091B7ED /* ZJDemoVideos */,
 				C5B45E7124BEAD200091B7ED /* ZJDemoRecommend */,
@@ -215,8 +223,8 @@
 			children = (
 				C5B45E7624BEADA00091B7ED /* ZJNewsListViewController.h */,
 				C5B45E7724BEADA00091B7ED /* ZJNewsListViewController.m */,
-				C551C23724BEEF7F00BD5C49 /* ZJNewsDetailViewController.h */,
 				C551C23824BEEF7F00BD5C49 /* ZJNewsDetailViewController.m */,
+				C551C23724BEEF7F00BD5C49 /* ZJNewsDetailViewController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +245,8 @@
 				C5528AA024E392DF00E2521B /* ZJVideoCoverCell.m */,
 				C54948D82521816100062195 /* ZJVideoTooBarView.h */,
 				C54948D92521816100062195 /* ZJVideoTooBarView.m */,
+				C57FFEBA25233C2E00C2C3D3 /* ZJVideoUIDefines.h */,
+				C57FFEBB25233C2E00C2C3D3 /* ZJVideoUIDefines.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,10 +417,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57FFEC3252459F800C2C3D3 /* ZJScreen.m in Sources */,
 				C5B45E8424BEADFD0091B7ED /* ZJVideosViewController.m in Sources */,
 				C5B45E5824BEABFB0091B7ED /* AppDelegate.m in Sources */,
 				C56F8BE824C573DF004B50B1 /* ZJNewsDeleteView.m in Sources */,
 				C5528AA124E392DF00E2521B /* ZJVideoCoverCell.m in Sources */,
+				C57FFEBC25233C2E00C2C3D3 /* ZJVideoUIDefines.m in Sources */,
 				C5B45E7824BEADA00091B7ED /* ZJNewsListViewController.m in Sources */,
 				C5B45E9024BED98A0091B7ED /* ZJNewsItemCell.m in Sources */,
 				04B146C625092B5000232FC3 /* ZJVideoPlayer.m in Sources */,

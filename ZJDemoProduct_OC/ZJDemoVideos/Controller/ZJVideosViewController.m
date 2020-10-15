@@ -8,6 +8,8 @@
 
 #import "ZJVideosViewController.h"
 #import "ZJVideoCoverCell.h"
+#import "ZJVideoUIDefines.h"
+
 
 @interface ZJVideosViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -16,6 +18,14 @@
 
 @implementation ZJVideosViewController
 
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
+//}
+//- (void)viewWillDisappear:(BOOL)animated {
+//    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+//}
 - (instancetype)init
 {
     self = [super init];
@@ -39,8 +49,7 @@
     [self.view addSubview:self.collectionView];
 }
 
-- (void)layOutUI {
-}
+
 
 #pragma mark -- UIcollectionViewDelegate & DataSource
 
@@ -62,9 +71,9 @@
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
-        flowLayout.minimumLineSpacing = 10;
+        flowLayout.minimumLineSpacing = 0;
         flowLayout.minimumInteritemSpacing = 10;
-        flowLayout.itemSize = CGSizeMake((self.view.bounds.size.width - 10), (self.view.bounds.size.width - 10) / 16 * 9);
+        flowLayout.itemSize = CGSizeMake((self.view.bounds.size.width - 10), (self.view.bounds.size.width - 10) / 16 * 9 + kZJVideoTooBarHeight);
         UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
 
         collectionView.backgroundColor = [UIColor blackColor];

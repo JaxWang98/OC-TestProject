@@ -65,6 +65,7 @@
         myScroll.showsHorizontalScrollIndicator = NO;
         myScroll.delegate = self;
 
+        
         for (int i = 0; i < 5; i++) {
             UIView *view = [[UIView alloc]initWithFrame:CGRectMake(self.view.bounds.size.width * i, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
             UIView *subView =  [[UIView alloc]initWithFrame:CGRectMake(100, 200, 50, 50)];

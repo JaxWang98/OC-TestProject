@@ -11,6 +11,7 @@
 
 #import "ZJVideoTooBarView.h"
 #import <Masonry/Masonry.h>
+#import "ZJVideoUIDefines.h"
 
 @interface ZJVideoTooBarView()
 
@@ -42,6 +43,7 @@
 
 #pragma mark -- UI
 - (void)setUpUI {
+    self.backgroundColor = UIColor.whiteColor;
     [self addSubview:self.avatorImageView];
     [self addSubview:self.nickLabel];
     [self addSubview:self.commentImageView];
@@ -58,52 +60,52 @@
     [self.avatorImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
         make.left.mas_equalTo(15);
-        make.width.height.mas_equalTo(15);
+        make.width.height.mas_equalTo(20);
     }];
     [self.nickLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(0);
+        make.centerY.equalTo(self);
         make.left.equalTo(self.avatorImageView.mas_right).offset(5);
-        make.width.mas_equalTo(50);
-        make.height.mas_equalTo(15);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(30);
     }];
     [self.commentImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
         make.left.mas_equalTo(self.mas_centerX);
-        make.width.height.mas_equalTo(15);
+        make.width.height.mas_equalTo(20);
     }];
     [self.commentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
         make.left.equalTo(self.commentImageView.mas_right).offset(5);
-        make.width.mas_equalTo(20);
-        make.height.mas_equalTo(15);
+        make.width.mas_equalTo(30);
+        make.height.mas_equalTo(30);
     }];
     [self.likeImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
-        make.left.equalTo(self.commentLabel.mas_right).offset(15);
-        make.width.height.mas_equalTo(15);
+        make.left.equalTo(self.commentLabel.mas_right).offset(10);
+        make.width.height.mas_equalTo(20);
     }];
     [self.likeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
         make.left.equalTo(self.likeImageView.mas_right).offset(5);
-        make.width.mas_equalTo(20);
-        make.height.mas_equalTo(15);
+        make.width.mas_equalTo(30);
+        make.height.mas_equalTo(30);
     }];
     [self.shareImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
-        make.left.equalTo(self.likeLabel.mas_right).offset(15);
-        make.width.height.mas_equalTo(15);
+        make.left.equalTo(self.likeLabel.mas_right).offset(10);
+        make.width.height.mas_equalTo(20);
     }];
     [self.shareLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
         make.left.equalTo(self.shareImageView.mas_right).offset(5);
-        make.width.mas_equalTo(50);
-        make.height.mas_equalTo(50);
+        make.width.mas_equalTo(40);
+        make.height.mas_equalTo(30);
     }];
 
 }
 #pragma mark -- 数据处理
 - (void)updateUIDataWithModel:(ZJVideoToolBarModel *)model {
-    _avatorImageView.image = [UIImage imageNamed:@"icon.bundle/icon.png"];
+    _avatorImageView.image = [UIImage imageNamed:@"icon.bundle"];
     _nickLabel.text = @"极客时间";
 
     _commentImageView.image = [UIImage imageNamed:@"comment"];
@@ -122,7 +124,8 @@
 - (UILabel *)_createLab {
     UILabel *lab = [[UILabel alloc] init];
     lab.layer.masksToBounds = YES;
-    lab.layer.cornerRadius = 15;
+    lab.layer.cornerRadius = 14;
+    lab.textColor = UIColor.grayColor;
     lab.translatesAutoresizingMaskIntoConstraints = NO;
     return lab;
 }
@@ -131,6 +134,7 @@
     UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectZero];
     img.layer.masksToBounds = YES;
     img.layer.cornerRadius = 15;
+    img.contentMode = UIViewContentModeScaleAspectFit;
     img.translatesAutoresizingMaskIntoConstraints = NO;
     return img;
 }
@@ -139,7 +143,7 @@
 #pragma mark -- lazy
 
 - (UIImageView *)avatorImageView {
-    if (_avatorImageView) {
+    if (!_avatorImageView) {
         _avatorImageView = [self _createImageView];
     }
     return _avatorImageView;
@@ -152,43 +156,43 @@
     return _nickLabel;
 }
 - (UIImageView *)commentImageView {
-    if (_avatorImageView) {
-        _avatorImageView = [self _createImageView];
+    if (!_commentImageView) {
+        _commentImageView = [self _createImageView];
     }
-    return _avatorImageView;
+    return _commentImageView;
 }
 
 - (UILabel *)commentLabel {
-    if (!_nickLabel) {
-        _nickLabel = [self _createLab];
+    if (!_commentLabel) {
+        _commentLabel = [self _createLab];
     }
-    return _nickLabel;
+    return _commentLabel;
 }
 - (UIImageView *)likeImageView {
-    if (_avatorImageView) {
-        _avatorImageView = [self _createImageView];
+    if (!_likeImageView) {
+        _likeImageView = [self _createImageView];
     }
-    return _avatorImageView;
+    return _likeImageView;
 }
 
 - (UILabel *)likeLabel {
-    if (!_nickLabel) {
-        _nickLabel = [self _createLab];
+    if (!_likeLabel) {
+        _likeLabel = [self _createLab];
     }
-    return _nickLabel;
+    return _likeLabel;
 }
 - (UIImageView *)shareImageView {
-    if (_avatorImageView) {
-        _avatorImageView = [self _createImageView];
+    if (!_shareImageView) {
+        _shareImageView = [self _createImageView];
     }
-    return _avatorImageView;
+    return _shareImageView;
 }
 
 - (UILabel *)shareLabel {
-    if (!_nickLabel) {
-        _nickLabel = [self _createLab];
+    if (!_shareLabel) {
+        _shareLabel = [self _createLab];
     }
-    return _nickLabel;
+    return _shareLabel;
 }
 
 

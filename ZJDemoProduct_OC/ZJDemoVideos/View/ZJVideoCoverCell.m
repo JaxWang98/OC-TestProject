@@ -9,20 +9,20 @@
 //视频播放cell
 //
 
+
 #import "ZJVideoCoverCell.h"
 #import <AVFoundation/AVFoundation.h>
 #import "ZJVideoPlayer.h"
 #import "ZJVideoTooBarView.h"
+#import "ZJVideoUIDefines.h"
+
 
 @interface ZJVideoCoverCell ()
 
 @property (nonatomic, strong) UIImageView *placeHolderImgView;//占位图片
 @property (nonatomic, strong) UIImageView *playView;//播放view
-@property (nonatomic, strong) ZJVideoTooBarView *toolBar;
+@property (nonatomic, strong) ZJVideoTooBarView *toolBar;//视频下方bar
 @property (nonatomic, copy) NSString *videoURL;
-
-
-
 
 @end
 
@@ -39,12 +39,17 @@
 
 #pragma mark -- UI
 - (void)setUpUI {
-    self.placeHolderImgView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-    self.playView.frame = CGRectMake((self.frame.size.width - 50) / 2, (self.frame.size.height - 50) / 2, 50, 50);
-
+    
     [self addSubview:self.placeHolderImgView];
     [self addSubview:self.playView];
     [self addSubview:self.toolBar];
+    
+    self.placeHolderImgView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height - kZJVideoTooBarHeight);
+    self.playView.frame = CGRectMake((self.frame.size.width - 50) / 2, (self.frame.size.height - 50) / 2, 50, 50);
+    //0, _playView.bounds.size.height, self.frame.size.width, 60
+    self.toolBar.frame = CGRectMake(0, self.placeHolderImgView.bounds.size.height,  self.frame.size.width, kZJVideoTooBarHeight);
+
+
 
     UITapGestureRecognizer *playTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(_didTapPlay)];
     [self addGestureRecognizer:playTap];
@@ -90,7 +95,7 @@
 
 - (ZJVideoTooBarView *)toolBar {
     if (!_toolBar) {
-        _toolBar = [[ZJVideoTooBarView alloc] initWithFrame:CGRectMake(0, _playView.bounds.size.height, self.frame.size.width, 60)];
+        _toolBar = [[ZJVideoTooBarView alloc] init];
     }
     return  _toolBar;
 }
