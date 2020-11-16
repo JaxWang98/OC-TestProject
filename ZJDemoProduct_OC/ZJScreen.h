@@ -21,6 +21,16 @@ NS_ASSUME_NONNULL_BEGIN
 //根据横屏与否来设置屏幕高度
 #define SCREEN_WIDTH (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
 
+//全面屏适配
+#define IS_IPHONE_X_XR_MAX (IS_IPHONE_X || IS_IPHONE_XR || IS_IPHONE_XMAX)
+
+#define IS_IPHONE_X (SCREEN_WIDTH == [GTScreen sizeFor58Inch].width && SCREEN_HEIGHT == [GTScreen sizeFor58Inch].height)
+#define IS_IPHONE_XR (SCREEN_WIDTH == [GTScreen sizeFor61Inch].width && SCREEN_HEIGHT == [GTScreen sizeFor58Inch].height)
+#define IS_IPHONE_XMAX (SCREEN_WIDTH == [GTScreen sizeFor65Inch].width && SCREEN_HEIGHT == [GTScreen sizeFor58Inch].height)
+
+//status高度
+#define STATUSBAR_HEIGHT (IS_IPHONE_X_XR_MAX ? 44 : 20)
+
 //简写
 #define UI(x) UIAdapter(x)
 #define UIRect(x,y,height,width) UIRectAdapter(x,y,width,height)
@@ -43,8 +53,13 @@ static inline CGRect UIRectAdapter(x,y,width,height) {
 
 @interface ZJScreen : NSObject
 
-
-
+//iphone xs max 6.5寸
++ (CGSize)sizeFor65Inch;
+//iphone xr max 6.1寸
++ (CGSize)sizeFor61Inch;
+//iphone x 5.8Inch
++ (CGSize)sizeFor58Inch;
+//...其它机型
 @end
 
 NS_ASSUME_NONNULL_END

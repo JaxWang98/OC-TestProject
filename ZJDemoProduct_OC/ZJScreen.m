@@ -14,6 +14,20 @@
 
 @implementation ZJScreen
 
+//iphone xs max 6.5寸
++ (CGSize)sizeFor65Inch {
+    return CGSizeMake(414, 896);
+}
+//iphone xr max 6.1寸
++ (CGSize)sizeFor61Inch {
+    return CGSizeMake(414, 896);
+
+}
+//iphone x 5.8Inch
++ (CGSize)sizeFor58Inch {
+    return CGSizeMake(414, 896);
+
+}
 
 
 @end
