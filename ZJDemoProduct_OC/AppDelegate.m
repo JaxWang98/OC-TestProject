@@ -16,6 +16,8 @@
 #import "ZJRecommendViewController.h"
 #import "ZJUserViewController.h"
 
+#import "ZJSplashView.h"
+
 
 @interface AppDelegate () <UITabBarControllerDelegate>
 
@@ -44,6 +46,10 @@
 
     self.window.rootViewController = myNavi;    //主流目前是这种结构
     [self.window makeKeyAndVisible];
+    
+    ZJSplashView *splashView = [[ZJSplashView alloc] initWithFrame:self.window.bounds];
+    [self.window addSubview:splashView];
+    
     
     return YES;
 }

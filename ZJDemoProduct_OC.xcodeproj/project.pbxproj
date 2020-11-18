@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04B146C625092B5000232FC3 /* ZJVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B146C525092B5000232FC3 /* ZJVideoPlayer.m */; };
+		04E58B3225656BA90077DFC1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E58B3125656BA90077DFC1 /* Launch Screen.storyboard */; };
+		04E58B3525656DDD0077DFC1 /* ZJSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E58B3425656DDD0077DFC1 /* ZJSplashView.m */; };
 		3EEAB564373B526220DE1D97 /* Pods_ZJDemoProduct_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */; };
 		C54948DA2521816100062195 /* ZJVideoTooBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54948D92521816100062195 /* ZJVideoTooBarView.m */; };
 		C54948DD2521847B00062195 /* ZJVideoToolBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C54948DC2521847B00062195 /* ZJVideoToolBarModel.m */; };
@@ -19,7 +21,6 @@
 		C57FFEC3252459F800C2C3D3 /* ZJScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C57FFEC2252459F800C2C3D3 /* ZJScreen.m */; };
 		C5B45E5824BEABFB0091B7ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E5724BEABFB0091B7ED /* AppDelegate.m */; };
 		C5B45E6324BEABFC0091B7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B45E6224BEABFC0091B7ED /* Assets.xcassets */; };
-		C5B45E6624BEABFC0091B7ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B45E6424BEABFC0091B7ED /* LaunchScreen.storyboard */; };
 		C5B45E6924BEABFC0091B7ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E6824BEABFC0091B7ED /* main.m */; };
 		C5B45E7824BEADA00091B7ED /* ZJNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E7724BEADA00091B7ED /* ZJNewsListViewController.m */; };
 		C5B45E8424BEADFD0091B7ED /* ZJVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E8324BEADFD0091B7ED /* ZJVideosViewController.m */; };
@@ -33,6 +34,9 @@
 		029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJDemoProduct_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B146C425092B5000232FC3 /* ZJVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJVideoPlayer.h; sourceTree = "<group>"; };
 		04B146C525092B5000232FC3 /* ZJVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVideoPlayer.m; sourceTree = "<group>"; };
+		04E58B3125656BA90077DFC1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		04E58B3325656DDD0077DFC1 /* ZJSplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSplashView.h; sourceTree = "<group>"; };
+		04E58B3425656DDD0077DFC1 /* ZJSplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSplashView.m; sourceTree = "<group>"; };
 		8525AE29A138B6294060611C /* Pods-ZJDemoProduct_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJDemoProduct_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJDemoProduct_OC/Pods-ZJDemoProduct_OC.debug.xcconfig"; sourceTree = "<group>"; };
 		C54948D82521816100062195 /* ZJVideoTooBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJVideoTooBarView.h; sourceTree = "<group>"; };
 		C54948D92521816100062195 /* ZJVideoTooBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJVideoTooBarView.m; sourceTree = "<group>"; };
@@ -55,7 +59,6 @@
 		C5B45E5624BEABFB0091B7ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5B45E5724BEABFB0091B7ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C5B45E6224BEABFC0091B7ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C5B45E6524BEABFC0091B7ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5B45E6724BEABFC0091B7ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B45E6824BEABFC0091B7ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5B45E7624BEADA00091B7ED /* ZJNewsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNewsListViewController.h; sourceTree = "<group>"; };
@@ -143,13 +146,15 @@
 			children = (
 				C57FFEC1252459F800C2C3D3 /* ZJScreen.h */,
 				C57FFEC2252459F800C2C3D3 /* ZJScreen.m */,
+				04E58B3325656DDD0077DFC1 /* ZJSplashView.h */,
+				04E58B3425656DDD0077DFC1 /* ZJSplashView.m */,
 				C5B45E6F24BEAD080091B7ED /* ZJDemoNews */,
 				C5B45E7024BEAD0D0091B7ED /* ZJDemoVideos */,
 				C5B45E7124BEAD200091B7ED /* ZJDemoRecommend */,
 				C5B45E7224BEAD3E0091B7ED /* ZJDemoUser */,
 				C5528AA324E3B95000E2521B /* Resources */,
 				C5B45E6724BEABFC0091B7ED /* Info.plist */,
-				C5B45E6424BEABFC0091B7ED /* LaunchScreen.storyboard */,
+				04E58B3125656BA90077DFC1 /* Launch Screen.storyboard */,
 				C5B45E5624BEABFB0091B7ED /* AppDelegate.h */,
 				C5B45E5724BEABFB0091B7ED /* AppDelegate.m */,
 				C5B45E6824BEABFC0091B7ED /* main.m */,
@@ -367,7 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B45E6624BEABFC0091B7ED /* LaunchScreen.storyboard in Resources */,
+				04E58B3225656BA90077DFC1 /* Launch Screen.storyboard in Resources */,
 				C5B45E6324BEABFC0091B7ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +427,7 @@
 				C5B45E5824BEABFB0091B7ED /* AppDelegate.m in Sources */,
 				C56F8BE824C573DF004B50B1 /* ZJNewsDeleteView.m in Sources */,
 				C5528AA124E392DF00E2521B /* ZJVideoCoverCell.m in Sources */,
+				04E58B3525656DDD0077DFC1 /* ZJSplashView.m in Sources */,
 				C57FFEBC25233C2E00C2C3D3 /* ZJVideoUIDefines.m in Sources */,
 				C5B45E7824BEADA00091B7ED /* ZJNewsListViewController.m in Sources */,
 				C5B45E9024BED98A0091B7ED /* ZJNewsItemCell.m in Sources */,
@@ -438,17 +444,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C5B45E6424BEABFC0091B7ED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C5B45E6524BEABFC0091B7ED /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C5B45E6A24BEABFC0091B7ED /* Debug */ = {

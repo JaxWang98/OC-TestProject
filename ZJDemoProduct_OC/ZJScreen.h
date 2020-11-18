@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 //根据横屏与否来设置屏幕宽度
 #define SCREEN_WIDTH (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
 //根据横屏与否来设置屏幕高度
-#define SCREEN_WIDTH (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT (IS_LANDSCAPE ? [[UIScreen mainScreen ] bounds].size.width : [[UIScreen mainScreen ] bounds].size.height)
 
 //全面屏适配
 #define IS_IPHONE_X_XR_MAX (IS_IPHONE_X || IS_IPHONE_XR || IS_IPHONE_XMAX)
@@ -32,8 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define STATUSBAR_HEIGHT (IS_IPHONE_X_XR_MAX ? 44 : 20)
 
 //简写
-#define UI(x) UIAdapter(x)
-#define UIRect(x,y,height,width) UIRectAdapter(x,y,width,height)
+#define AutoUI(x) UIAdapter(x)
+#define AutoUIRect(x,y,height,width) UIRectAdapter(x,y,width,height)
 
 //返回适配后的数值
 static inline NSInteger UIAdapter(float x) {
