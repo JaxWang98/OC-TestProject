@@ -21,22 +21,23 @@
 }
 
 - (void)setUpUI {
-    self.backgroundColor = UIColor.blackColor;
+    self.backgroundColor = UIColor.whiteColor;
     
     //    _avatorImageView.image = [UIImage imageNamed:@"icon.bundle"];
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.image = [UIImage imageNamed:@"LaunchScreen"];
+    imageView.image = [UIImage imageNamed:@"ZJLaunchImage"];
     imageView.contentMode = UIViewContentModeScaleAspectFill;
     imageView.clipsToBounds = YES;
     
     UIButton *btn = [[UIButton alloc] init];
     btn.backgroundColor = UIColor.clearColor;
-    [btn setTintColor:UIColor.blackColor];
+    [btn setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
     [btn setTitle:@"跳过" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(removeSplashView) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:imageView];
     [self addSubview:btn];
+    [self bringSubviewToFront:btn];
     
     imageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     btn.frame = AutoUIRect(330, 100, 60, 40);
