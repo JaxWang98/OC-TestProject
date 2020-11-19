@@ -54,4 +54,9 @@
     return YES;
 }
 
+#pragma mark -- Scheme
+//使得app支持从其他app中跳转而来s
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return YES;
+}
 @end

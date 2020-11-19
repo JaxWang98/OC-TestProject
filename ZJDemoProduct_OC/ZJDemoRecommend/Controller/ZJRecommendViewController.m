@@ -41,18 +41,38 @@
     [self.view addSubview:self.scrollView];
 }
 
-- (void)layOutUI {
+
+
+#pragma mark -- Action
+- (void)tapHandler {
+    //URL Scheme测试
+    NSURL *urlScheme = [NSURL URLWithString:@"Food://"];
+    __unused BOOL canOpenURL = [[UIApplication sharedApplication] canOpenURL:urlScheme];
+    if (canOpenURL == YES) {
+    [[UIApplication sharedApplication] openURL:urlScheme options:@{} completionHandler:^(BOOL success) {
+        //业务逻辑
+    }];
+    }
+}
+
+#pragma mark -- ScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"scrollViewDidScroll: %f", scrollView.contentOffset.x);
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
 }
 
 #pragma mark -- LazyLoad
-//- (NSArray *)colorArray {
-//    if (!_colorArray) {
-//        NSArray *array = [NSArray array];
-//        array = @[[UIColor redColor], [UIColor orangeColor], [UIColor yellowColor], [UIColor greenColor], [UIColor purpleColor]];
-//        _colorArray = array;
-//    }
-//    return _colorArray;
-//}
 
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
@@ -81,28 +101,6 @@
         _scrollView = myScroll;
     }
     return _scrollView;
-}
-
-//MARK: Target
-- (void)tapHandler {
-    NSLog(@"tap");
-}
-
-//MARK: ScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    NSLog(@"scrollViewDidScroll: %f", scrollView.contentOffset.x);
-}
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-}
-
-- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
 }
 
 @end
