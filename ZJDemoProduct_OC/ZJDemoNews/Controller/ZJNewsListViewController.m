@@ -10,9 +10,11 @@
 
 #import "ZJNewsListLoader.h"
 #import "ZJNewsItemCell.h"
-#import "ZJNewsDetailViewController.h"
+//#import "ZJNewsDetailViewController.h"
 #import "ZJNewsDeleteView.h"
 #import "ZJNewsListModel.h"
+
+#import "ZJMediator.h"
 
 const NSString *tabID = @"tabID";
 
@@ -88,9 +90,12 @@ const NSString *tabID = @"tabID";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ZJNewsListModel *modelItem = [self.dataArray objectAtIndex:indexPath.row];
-    ZJNewsDetailViewController *vc = [[ZJNewsDetailViewController alloc]initWithURL:modelItem.url];
-    vc.view.backgroundColor = [UIColor whiteColor];
+    
+    //target-action方案
+    __kindof UIViewController *vc = [ZJMediator detailViewControllerWithUrl:modelItem.url];
     vc.title = [NSString stringWithFormat:@"序号%ld", (long)indexPath.row];
+    
+    
     [self.navigationController pushViewController:vc animated:YES];
 
 //    [[NSUserDefaults standardUserDefaults]setBool:YES forKey:modelItem.uniKey];//已读
