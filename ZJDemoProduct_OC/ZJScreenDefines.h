@@ -51,7 +51,7 @@ static inline CGRect UIRectAdapter(x,y,width,height) {
 }
 
 
-@interface ZJScreen : NSObject
+@interface ZJScreenDefines : NSObject
 
 //iphone xs max 6.5寸
 + (CGSize)sizeFor65Inch;

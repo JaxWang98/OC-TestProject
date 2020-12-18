@@ -5,7 +5,9 @@
 //  Created by jaxwang on 2020/7/21.
 //  Copyright © 2020 widerness. All rights reserved.
 //
-
+//
+//归档解归档，可以使用YYModel实现
+//
 #import "ZJNewsListModel.h"
 
 
@@ -50,7 +52,6 @@
 
 - (void)configWithDictionary:(NSDictionary *)dic {
     
-#warning 类型是否匹配
     self.category = [dic objectForKey:@"category"];
     self.thumbnaiPicS = [dic objectForKey:@"thumbnail_pic_s"];
     self.uniKey = [dic objectForKey:@"uniquekey"];

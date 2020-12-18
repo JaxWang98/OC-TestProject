@@ -10,7 +10,7 @@
 
 #import "ZJNewsListLoader.h"
 #import "ZJNewsItemCell.h"
-//#import "ZJNewsDetailViewController.h"
+#import "ZJNewsDetailViewController.h"
 #import "ZJNewsDeleteView.h"
 #import "ZJNewsListModel.h"
 
@@ -35,6 +35,7 @@ const NSString *tabID = @"tabID";
 {
     self = [super init];
     if (self) {
+        self.title = @"新闻";
         self.tabBarItem.title = @"新闻";
         self.tabBarItem.image = [UIImage imageNamed:@"page"];
         self.tabBarItem.selectedImage = [UIImage imageNamed:@"page_selected"];
@@ -45,7 +46,6 @@ const NSString *tabID = @"tabID";
 #pragma mark -- lifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     [self setUpUI];
     [self getNewsList];
 }
@@ -74,13 +74,10 @@ const NSString *tabID = @"tabID";
 #pragma mark -- TableViewDelegate & DataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    ZJNewsItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
+    
     ZJNewsItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
-
     cell.delegate = self;
-//    [cell setUIData];
-
-    [cell setCellDataWithModel:[self.dataArray objectAtIndex:indexPath.row]];
+    [cell updateCellDataWithModel:[self.dataArray objectAtIndex:indexPath.row]];
     return cell;
 }
 

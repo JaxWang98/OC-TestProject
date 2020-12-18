@@ -24,8 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 //协议
 @property (nonatomic, weak) id<ZJTableViewDelegate> delegate;
 
-//设置UI数据
-- (void)setCellDataWithModel:(ZJNewsListModel *)modelItem;
+
+/// 通过数据更新cell
+- (void)updateCellDataWithModel:(ZJNewsListModel *)modelItem;
 @end
 
 NS_ASSUME_NONNULL_END
