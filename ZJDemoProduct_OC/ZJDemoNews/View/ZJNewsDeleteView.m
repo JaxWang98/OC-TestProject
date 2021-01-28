@@ -43,14 +43,6 @@
     self.deleteBlock = [clickBlock copy];
     
     [UIApplication.sharedApplication.keyWindow addSubview:self];//把self加载到window上，确保在最顶层
-    
-//    [UIView animateWithDuration:1.f delay:0 options:UIViewAnimationOptionAutoreverse animations:^{
-//        [UIView animateWithDuration:1.f animations:^{
-//            self.btn.frame = CGRectMake((self.bounds.size.width - 200) / 2, (self.bounds.size.height - 200) / 2, 200, 200);
-//        }];//动画结束状态
-//    } completion:^(BOOL finished) {
-//        NSLog(@"动画结束");
-//    }];
     [UIView animateWithDuration:1.f delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionAutoreverse animations:^{
         [UIView animateWithDuration:1.f animations:^{
             self.btn.frame = CGRectMake((self.bounds.size.width - 200) / 2, (self.bounds.size.height - 200) / 2, 200, 200);

@@ -6,13 +6,13 @@
 //  Copyright © 2020 widerness. All rights reserved.
 //
 
-#import "ZJScreen.h"
+#import "ZJScreenDefines.h"
 
 #define IS_LANDSCAPE (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication]statusBarOrientation]))
 
 
 
-@implementation ZJScreen
+@implementation ZJScreenDefines
 
 //iphone xs max 6.5寸
 + (CGSize)sizeFor65Inch {

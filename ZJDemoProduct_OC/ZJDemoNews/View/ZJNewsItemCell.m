@@ -39,7 +39,7 @@
     [self.contentView addSubview:self.conmmentLab];
     [self.contentView addSubview:self.timeLab];
     [self.contentView addSubview:self.img];
-//    [self.contentView addSubview:self.btn];
+    [self.contentView addSubview:self.btn];
 }
 
 - (void)layOutUI {
@@ -50,7 +50,7 @@
     self.btn.frame = CGRectMake(self.img.frame.origin.x - self.btn.frame.size.width - 15, self.btn.frame.origin.y, self.btn.frame.size.width, self.btn.frame.size.height);
 }
 
-- (void)setCellDataWithModel:(ZJNewsListModel *)modelItem{
+- (void)updateCellDataWithModel:(ZJNewsListModel *)modelItem{
     self.tittleLab.text = modelItem.title;
     self.sourceLab.text = modelItem.author;
     self.conmmentLab.text =modelItem.category;

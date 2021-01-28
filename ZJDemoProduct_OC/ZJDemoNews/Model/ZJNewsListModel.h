@@ -5,6 +5,9 @@
 //  Created by jaxwang on 2020/7/21.
 //  Copyright © 2020 widerness. All rights reserved.
 //
+//
+//新闻列表网络请求数据模型
+//
 
 #import <Foundation/Foundation.h>
 

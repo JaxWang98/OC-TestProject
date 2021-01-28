@@ -7,7 +7,7 @@
 //
 
 #import "ZJSplashView.h"
-#import "ZJScreen.h"
+#import "ZJScreenDefines.h"
 
 @implementation ZJSplashView
 
@@ -45,8 +45,7 @@
 }
 
 
-//MARK: Action
-
+#pragma mark -- Action
 /// 移除SplashView
 - (void)removeSplashView {
     [self removeFromSuperview];
