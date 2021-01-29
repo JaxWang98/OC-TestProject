@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 //target-action
 + (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl;
 
+//urlScheme
 @end
 
 NS_ASSUME_NONNULL_END

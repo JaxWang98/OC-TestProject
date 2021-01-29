@@ -108,7 +108,7 @@ const NSString *tabID = @"tabID";
     ZJNewsDeleteView *deleteView = [[ZJNewsDeleteView alloc]initWithFrame:self.view.bounds];
     CGRect rect = [cell convertRect:btn.frame toView:nil]; //rect坐标转换，nil代表以window坐标为基准
 
-    __weak typeof(self) weakSelf = self;
+    
     [deleteView showDeleteViewFromPoint:rect.origin withBlock:^{
 //           NSLog(@"1");
 //           __strong typeof(self) strongSelf = weakSelf;

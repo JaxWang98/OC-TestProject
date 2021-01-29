@@ -1,10 +1,11 @@
 //
-//  ZJDefines.m
+//  ZJFunctionDefines.m
 //  ZJDemoProduct_OC
 //
-//  Created by jaxwang on 2020/12/18.
-//  Copyright © 2020 widerness. All rights reserved.
+//  Created by jaxwang on 2021/1/28.
+//  Copyright © 2021 widerness. All rights reserved.
 //
 
-#import "ZJDefines.h"
+#import "ZJFunctionDefines.h"
+
 

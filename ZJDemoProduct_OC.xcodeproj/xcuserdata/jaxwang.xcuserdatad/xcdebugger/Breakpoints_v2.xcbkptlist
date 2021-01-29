@@ -51,63 +51,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "-showDeleteViewFromPoint:withBlock:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - ebca2f8ff594bde4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ZJNewsDeleteView showDeleteViewFromPoint:withBlock:]"
-                  moduleName = "ZJDemoProduct_OC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "360">
-               </Location>
-               <Location
-                  uuid = "667CFBF1-B773-4562-A8E1-B34A5E60DC6D - 25fa20cd4667518a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__54-[ZJNewsDeleteView showDeleteViewFromPoint:withBlock:]_block_invoke"
-                  moduleName = "ZJDemoProduct_OC"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9A16CEB6-6655-4C9D-888D-6D485E35BEEA"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/View/ZJNewsDeleteView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-showDeleteViewFromPoint:withBlock:"
             landmarkType = "7">
          </BreakpointContent>
@@ -116,7 +68,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4D8FB2FD-CEA3-4078-BEA1-E7238D1229F5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
@@ -132,7 +84,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B9863B20-F1C0-48D6-A051-5E86FA310DCB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
@@ -142,6 +94,38 @@
             endingLineNumber = "112"
             landmarkName = "-tableViewCell:clickBtn:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B9863B20-F1C0-48D6-A051-5E86FA310DCB - 918f5a2753a4c495"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZJNewsListViewController tableViewCell:clickBtn:]"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "B9863B20-F1C0-48D6-A051-5E86FA310DCB - ec98d99bce94c6b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__51-[ZJNewsListViewController tableViewCell:clickBtn:]_block_invoke"
+                  moduleName = "ZJDemoProduct_OC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaxwang/Desktop/repository/ZJOCDemo/ZJDemoProduct_OC/ZJDemoNews/Controller/ZJNewsListViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
