@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0403AA0A25C8F5530001BA5D /* libZJStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0403AA0925C8F5530001BA5D /* libZJStatic.a */; };
 		040DF554256C04AA0091CD91 /* ZJMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 040DF553256C04AA0091CD91 /* ZJMediator.m */; };
 		04B146C625092B5000232FC3 /* ZJVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B146C525092B5000232FC3 /* ZJVideoPlayer.m */; };
 		04E58B3225656BA90077DFC1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E58B3125656BA90077DFC1 /* Launch Screen.storyboard */; };
@@ -34,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJDemoProduct_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0403AA0725C8F5530001BA5D /* ZJStaticTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJStaticTest.h; sourceTree = "<group>"; };
+		0403AA0825C8F5530001BA5D /* ZJStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJStatic.h; sourceTree = "<group>"; };
+		0403AA0925C8F5530001BA5D /* libZJStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZJStatic.a; sourceTree = "<group>"; };
 		040DF552256C04AA0091CD91 /* ZJMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJMediator.h; sourceTree = "<group>"; };
 		040DF553256C04AA0091CD91 /* ZJMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJMediator.m; sourceTree = "<group>"; };
 		04B146C425092B5000232FC3 /* ZJVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJVideoPlayer.h; sourceTree = "<group>"; };
@@ -88,12 +92,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EEAB564373B526220DE1D97 /* Pods_ZJDemoProduct_OC.framework in Frameworks */,
+				0403AA0A25C8F5530001BA5D /* libZJStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0403AA0625C8F4F60001BA5D /* ZJStatic */ = {
+			isa = PBXGroup;
+			children = (
+				0403AA0925C8F5530001BA5D /* libZJStatic.a */,
+				0403AA0825C8F5530001BA5D /* ZJStatic.h */,
+				0403AA0725C8F5530001BA5D /* ZJStaticTest.h */,
+			);
+			path = ZJStatic;
+			sourceTree = "<group>";
+		};
 		4C40B4D2E8845D8BFD75D619 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +173,7 @@
 				04E58B3425656DDD0077DFC1 /* ZJSplashView.m */,
 				040DF552256C04AA0091CD91 /* ZJMediator.h */,
 				040DF553256C04AA0091CD91 /* ZJMediator.m */,
+				0403AA0625C8F4F60001BA5D /* ZJStatic */,
 				C5B45E6F24BEAD080091B7ED /* ZJDemoNews */,
 				C5B45E7024BEAD0D0091B7ED /* ZJDemoVideos */,
 				C5B45E7124BEAD200091B7ED /* ZJDemoRecommend */,
@@ -581,6 +597,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJStatic",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.wilderness.ZJDemoProduct-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -599,6 +619,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJStatic",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.wilderness.ZJDemoProduct-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

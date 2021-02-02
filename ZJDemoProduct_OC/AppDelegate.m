@@ -18,7 +18,6 @@
 
 #import "ZJSplashView.h"
 
-
 @interface AppDelegate () <UITabBarControllerDelegate>
 
 @end
@@ -28,7 +27,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-
 
     
     ZJNewsListViewController *vc1 = [[ZJNewsListViewController alloc]init];
