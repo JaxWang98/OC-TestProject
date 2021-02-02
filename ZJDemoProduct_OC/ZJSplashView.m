@@ -8,7 +8,6 @@
 
 #import "ZJSplashView.h"
 #import "ZJScreenDefines.h"
-
 @implementation ZJSplashView
 
 - (instancetype)initWithFrame:(CGRect)frame

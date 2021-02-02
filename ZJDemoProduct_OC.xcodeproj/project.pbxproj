@@ -22,6 +22,8 @@
 		C57FFEBC25233C2E00C2C3D3 /* ZJVideoUIDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = C57FFEBB25233C2E00C2C3D3 /* ZJVideoUIDefines.m */; };
 		C57FFEC3252459F800C2C3D3 /* ZJScreenDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = C57FFEC2252459F800C2C3D3 /* ZJScreenDefines.m */; };
 		C5AFAD3325C26540005732DC /* ZJFunctionDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AFAD3225C26540005732DC /* ZJFunctionDefines.m */; };
+		C5AFAD5A25C9535A005732DC /* ZJFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AFAD5825C9533F005732DC /* ZJFramework.framework */; };
+		C5AFAD5B25C9535B005732DC /* ZJFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5AFAD5825C9533F005732DC /* ZJFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5B45E5824BEABFB0091B7ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E5724BEABFB0091B7ED /* AppDelegate.m */; };
 		C5B45E6324BEABFC0091B7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B45E6224BEABFC0091B7ED /* Assets.xcassets */; };
 		C5B45E6924BEABFC0091B7ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E6824BEABFC0091B7ED /* main.m */; };
@@ -32,6 +34,20 @@
 		C5B45E8D24BED7DB0091B7ED /* ZJNewsListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E8C24BED7DB0091B7ED /* ZJNewsListLoader.m */; };
 		C5B45E9024BED98A0091B7ED /* ZJNewsItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E8F24BED98A0091B7ED /* ZJNewsItemCell.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5AFAD5C25C9535B005732DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C5AFAD5B25C9535B005732DC /* ZJFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJDemoProduct_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +81,7 @@
 		C57FFEC2252459F800C2C3D3 /* ZJScreenDefines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJScreenDefines.m; sourceTree = "<group>"; };
 		C5AFAD3125C26540005732DC /* ZJFunctionDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJFunctionDefines.h; sourceTree = "<group>"; };
 		C5AFAD3225C26540005732DC /* ZJFunctionDefines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJFunctionDefines.m; sourceTree = "<group>"; };
+		C5AFAD5825C9533F005732DC /* ZJFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZJFramework.framework; sourceTree = "<group>"; };
 		C5B45E5324BEABFB0091B7ED /* ZJDemoProduct_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDemoProduct_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B45E5624BEABFB0091B7ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5B45E5724BEABFB0091B7ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EEAB564373B526220DE1D97 /* Pods_ZJDemoProduct_OC.framework in Frameworks */,
+				C5AFAD5A25C9535A005732DC /* ZJFramework.framework in Frameworks */,
 				0403AA0A25C8F5530001BA5D /* libZJStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,14 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0403AA0625C8F4F60001BA5D /* ZJStatic */ = {
+		0403AA0625C8F4F60001BA5D /* ZJFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C5AFAD5825C9533F005732DC /* ZJFramework.framework */,
 				0403AA0925C8F5530001BA5D /* libZJStatic.a */,
 				0403AA0825C8F5530001BA5D /* ZJStatic.h */,
 				0403AA0725C8F5530001BA5D /* ZJStaticTest.h */,
 			);
-			path = ZJStatic;
+			path = ZJFramework;
 			sourceTree = "<group>";
 		};
 		4C40B4D2E8845D8BFD75D619 /* Pods */ = {
@@ -173,7 +192,7 @@
 				04E58B3425656DDD0077DFC1 /* ZJSplashView.m */,
 				040DF552256C04AA0091CD91 /* ZJMediator.h */,
 				040DF553256C04AA0091CD91 /* ZJMediator.m */,
-				0403AA0625C8F4F60001BA5D /* ZJStatic */,
+				0403AA0625C8F4F60001BA5D /* ZJFramework */,
 				C5B45E6F24BEAD080091B7ED /* ZJDemoNews */,
 				C5B45E7024BEAD0D0091B7ED /* ZJDemoVideos */,
 				C5B45E7124BEAD200091B7ED /* ZJDemoRecommend */,
@@ -351,6 +370,7 @@
 				C5B45E5024BEABFB0091B7ED /* Frameworks */,
 				C5B45E5124BEABFB0091B7ED /* Resources */,
 				AE0FCEF12C2DC7408D5538F9 /* [CP] Embed Pods Frameworks */,
+				C5AFAD5C25C9535B005732DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -591,6 +611,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSJK7MN7ZH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJFramework",
+				);
 				INFOPLIST_FILE = ZJDemoProduct_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -599,7 +623,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJStatic",
+					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJFramework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.wilderness.ZJDemoProduct-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -614,6 +638,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WSJK7MN7ZH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJFramework",
+				);
 				INFOPLIST_FILE = ZJDemoProduct_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +650,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJStatic",
+					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJFramework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.wilderness.ZJDemoProduct-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
