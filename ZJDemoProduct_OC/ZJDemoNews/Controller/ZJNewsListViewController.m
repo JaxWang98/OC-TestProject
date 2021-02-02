@@ -89,12 +89,19 @@ const NSString *tabID = @"tabID";
     ZJNewsListModel *modelItem = [self.dataArray objectAtIndex:indexPath.row];
     
     //target-action方案
-    __kindof UIViewController *vc = [ZJMediator detailViewControllerWithUrl:modelItem.url];
-    vc.title = [NSString stringWithFormat:@"序号%ld", (long)indexPath.row];
+//    __kindof UIViewController *vc = [ZJMediator detailViewControllerWithUrl:modelItem.url];
+//    vc.title = [NSString stringWithFormat:@"序号%ld", (long)indexPath.row];
+    
+    //url-scheme方案
+//    [ZJMediator openURL:@"ZJDemo://News/Details" params:@{@"url":modelItem.url,
+//                                                           @"controller":self.navigationController}];
+    
+    //protocol-class方案
+    Class cls = [ZJMediator classForProtocol:@protocol(ZJNewsDetailViewControllerProtocol)];
+    [self.navigationController pushViewController:[cls detailViewControllerWithUrl:modelItem.url] animated:YES];
     
     
-    [self.navigationController pushViewController:vc animated:YES];
-
+//    [self.navigationController pushViewController:vc animated:YES];
 //    [[NSUserDefaults standardUserDefaults]setBool:YES forKey:modelItem.uniKey];//已读
 }
 

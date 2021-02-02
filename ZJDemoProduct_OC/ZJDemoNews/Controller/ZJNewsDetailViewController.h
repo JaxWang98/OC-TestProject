@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZJMediator.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJNewsDetailViewController : UIViewController
+@interface ZJNewsDetailViewController : UIViewController<ZJNewsDetailViewControllerProtocol>
 
 
 - (instancetype)initWithURL:(NSString *)urlString;

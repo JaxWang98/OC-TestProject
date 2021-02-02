@@ -8,6 +8,7 @@
 
 #import "ZJNewsDetailViewController.h"
 #import <WebKit/WebKit.h>
+#import "ZJMediator.h"
 
 @interface ZJNewsDetailViewController () <WKNavigationDelegate>
 
@@ -18,7 +19,19 @@
 
 @implementation ZJNewsDetailViewController
 
-
+//在load阶段,就要把本controller的scheme对应的方法,写进注册表中
++ (void)load {
+    //scheme: controller对应的文件名
+    //processBlock: 具体的逻辑代码
+    [ZJMediator registerScheme:@"ZJDemo://News/Details" processBlock:^(NSDictionary * _Nonnull params) {
+        NSString *url = [NSString stringWithFormat:@"%@",[params objectForKey:@"url"]];
+        UINavigationController *navigationController = (UINavigationController *)[params objectForKey:@"controller"];
+        ZJNewsDetailViewController *vc = [[ZJNewsDetailViewController alloc] initWithURL:url];
+        [navigationController pushViewController:vc animated:YES];
+    }];
+    
+    [ZJMediator registerProtocol:@protocol(ZJNewsDetailViewControllerProtocol) class:[self class]];
+}
 - (instancetype)initWithURL:(NSString *)urlString
 {
     self = [super init];
@@ -68,6 +81,12 @@
 - (void)observeValueForKeyPath:(nullable NSString *)keyPath ofObject:(nullable id)object change:(nullable NSDictionary<NSKeyValueChangeKey, id> *)change context:(nullable void *)context{
     NSLog(@"KVO变化，回调,当前加载进度%@",change[@"new"]);
     self.progressView.progress = self.webView.estimatedProgress;
+}
+
+#pragma mark -- protocol
++ (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl {
+    ZJNewsDetailViewController *vc = [[ZJNewsDetailViewController alloc] initWithURL:detailUrl];
+    return vc;
 }
 
 #pragma mark -- LazyLoad
