@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJLoginManager : NSObject
 
++ (instancetype)sharedLoginManager;
 
 #pragma mark -- 登录
 - (BOOL)isLogin;
