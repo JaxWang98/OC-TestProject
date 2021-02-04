@@ -22,7 +22,13 @@
 		C57FFEBC25233C2E00C2C3D3 /* ZJVideoUIDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = C57FFEBB25233C2E00C2C3D3 /* ZJVideoUIDefines.m */; };
 		C57FFEC3252459F800C2C3D3 /* ZJScreenDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = C57FFEC2252459F800C2C3D3 /* ZJScreenDefines.m */; };
 		C5AFAD3325C26540005732DC /* ZJFunctionDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AFAD3225C26540005732DC /* ZJFunctionDefines.m */; };
-		C5AFAD8925C95AB0005732DC /* ZJFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AFAD8825C95AB0005732DC /* ZJFramework.framework */; };
+		C5AFAD9025CBDA5E005732DC /* ZJUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AFAD8F25CBDA5E005732DC /* ZJUserInfo.m */; };
+		C5AFAD9625CBE4BE005732DC /* ZJLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AFAD9525CBE4BE005732DC /* ZJLoginManager.m */; };
+		C5AFAD9F25CBEEF4005732DC /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5AFAD9D25CBEEF4005732DC /* TencentOpenApi_IOS_Bundle.bundle */; };
+		C5AFADA025CBEF06005732DC /* ZJFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AFAD8825C95AB0005732DC /* ZJFramework.framework */; };
+		C5AFADA125CBEF06005732DC /* ZJFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5AFAD8825C95AB0005732DC /* ZJFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5AFADA225CBEF09005732DC /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AFAD9C25CBEEF4005732DC /* TencentOpenAPI.framework */; };
+		C5AFADA525CBEF5A005732DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AFADA425CBEF5A005732DC /* SystemConfiguration.framework */; };
 		C5B45E5824BEABFB0091B7ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E5724BEABFB0091B7ED /* AppDelegate.m */; };
 		C5B45E6324BEABFC0091B7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B45E6224BEABFC0091B7ED /* Assets.xcassets */; };
 		C5B45E6924BEABFC0091B7ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B45E6824BEABFC0091B7ED /* main.m */; };
@@ -41,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C5AFADA125CBEF06005732DC /* ZJFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +87,14 @@
 		C5AFAD3125C26540005732DC /* ZJFunctionDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJFunctionDefines.h; sourceTree = "<group>"; };
 		C5AFAD3225C26540005732DC /* ZJFunctionDefines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJFunctionDefines.m; sourceTree = "<group>"; };
 		C5AFAD8825C95AB0005732DC /* ZJFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZJFramework.framework; sourceTree = "<group>"; };
+		C5AFAD8E25CBDA5E005732DC /* ZJUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJUserInfo.h; sourceTree = "<group>"; };
+		C5AFAD8F25CBDA5E005732DC /* ZJUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJUserInfo.m; sourceTree = "<group>"; };
+		C5AFAD9425CBE4BE005732DC /* ZJLoginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJLoginManager.h; sourceTree = "<group>"; };
+		C5AFAD9525CBE4BE005732DC /* ZJLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJLoginManager.m; sourceTree = "<group>"; };
+		C5AFAD9C25CBEEF4005732DC /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		C5AFAD9D25CBEEF4005732DC /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		C5AFADA425CBEF5A005732DC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C5AFADA625CBEF7A005732DC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		C5B45E5324BEABFB0091B7ED /* ZJDemoProduct_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDemoProduct_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B45E5624BEABFB0091B7ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5B45E5724BEABFB0091B7ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,8 +122,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EEAB564373B526220DE1D97 /* Pods_ZJDemoProduct_OC.framework in Frameworks */,
-				C5AFAD8925C95AB0005732DC /* ZJFramework.framework in Frameworks */,
+				C5AFADA525CBEF5A005732DC /* SystemConfiguration.framework in Frameworks */,
+				C5AFADA225CBEF09005732DC /* TencentOpenAPI.framework in Frameworks */,
 				0403AA0A25C8F5530001BA5D /* libZJStatic.a in Frameworks */,
+				C5AFADA025CBEF06005732DC /* ZJFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +135,8 @@
 		0403AA0625C8F4F60001BA5D /* ZJFramework */ = {
 			isa = PBXGroup;
 			children = (
+				C5AFAD9D25CBEEF4005732DC /* TencentOpenApi_IOS_Bundle.bundle */,
+				C5AFAD9C25CBEEF4005732DC /* TencentOpenAPI.framework */,
 				C5AFAD8825C95AB0005732DC /* ZJFramework.framework */,
 				0403AA0925C8F5530001BA5D /* libZJStatic.a */,
 				0403AA0825C8F5530001BA5D /* ZJStatic.h */,
@@ -138,6 +157,8 @@
 		B67600C9C93B3C6115CE35FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5AFADA625CBEF7A005732DC /* libiconv.tbd */,
+				C5AFADA425CBEF5A005732DC /* SystemConfiguration.framework */,
 				029D7F9740623FF8EA0DD4EE /* Pods_ZJDemoProduct_OC.framework */,
 			);
 			name = Frameworks;
@@ -159,6 +180,15 @@
 				C5B45E8C24BED7DB0091B7ED /* ZJNewsListLoader.m */,
 			);
 			path = Loder;
+			sourceTree = "<group>";
+		};
+		C5AFAD9325CBE477005732DC /* ZJLogin */ = {
+			isa = PBXGroup;
+			children = (
+				C5AFAD9425CBE4BE005732DC /* ZJLoginManager.h */,
+				C5AFAD9525CBE4BE005732DC /* ZJLoginManager.m */,
+			);
+			path = ZJLogin;
 			sourceTree = "<group>";
 		};
 		C5B45E4A24BEABFB0091B7ED = {
@@ -195,6 +225,7 @@
 				C5B45E7024BEAD0D0091B7ED /* ZJDemoVideos */,
 				C5B45E7124BEAD200091B7ED /* ZJDemoRecommend */,
 				C5B45E7224BEAD3E0091B7ED /* ZJDemoUser */,
+				C5AFAD9325CBE477005732DC /* ZJLogin */,
 				C5528AA324E3B95000E2521B /* Resources */,
 				C5B45E6724BEABFC0091B7ED /* Info.plist */,
 				04E58B3125656BA90077DFC1 /* Launch Screen.storyboard */,
@@ -345,6 +376,8 @@
 		C5B45E8024BEADE20091B7ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C5AFAD8E25CBDA5E005732DC /* ZJUserInfo.h */,
+				C5AFAD8F25CBDA5E005732DC /* ZJUserInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AFAD9F25CBEEF4005732DC /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				04E58B3225656BA90077DFC1 /* Launch Screen.storyboard in Resources */,
 				C5B45E6324BEABFC0091B7ED /* Assets.xcassets in Resources */,
 			);
@@ -472,6 +506,7 @@
 				C56F8BE824C573DF004B50B1 /* ZJNewsDeleteView.m in Sources */,
 				C5528AA124E392DF00E2521B /* ZJVideoCoverCell.m in Sources */,
 				04E58B3525656DDD0077DFC1 /* ZJSplashView.m in Sources */,
+				C5AFAD9025CBDA5E005732DC /* ZJUserInfo.m in Sources */,
 				C57FFEBC25233C2E00C2C3D3 /* ZJVideoUIDefines.m in Sources */,
 				C5B45E7824BEADA00091B7ED /* ZJNewsListViewController.m in Sources */,
 				040DF554256C04AA0091CD91 /* ZJMediator.m in Sources */,
@@ -480,6 +515,7 @@
 				C551C23924BEEF7F00BD5C49 /* ZJNewsDetailViewController.m in Sources */,
 				C5B45E8724BEAE2C0091B7ED /* ZJRecommendViewController.m in Sources */,
 				C54948DA2521816100062195 /* ZJVideoTooBarView.m in Sources */,
+				C5AFAD9625CBE4BE005732DC /* ZJLoginManager.m in Sources */,
 				C5AFAD3325C26540005732DC /* ZJFunctionDefines.m in Sources */,
 				C55E3CA224C6C38300ADB2B7 /* ZJNewsListModel.m in Sources */,
 				C54948DD2521847B00062195 /* ZJVideoToolBarModel.m in Sources */,
@@ -608,7 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WSJK7MN7ZH;
+				DEVELOPMENT_TEAM = 35YLJ32MBS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJFramework",
@@ -622,6 +658,22 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJFramework",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"UIKit\"",
+					"-fobjc-arc",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.wilderness.ZJDemoProduct-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -635,7 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WSJK7MN7ZH;
+				DEVELOPMENT_TEAM = 35YLJ32MBS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJFramework",
@@ -649,6 +701,22 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJDemoProduct_OC/ZJFramework",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"UIKit\"",
+					"-fobjc-arc",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.wilderness.ZJDemoProduct-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
