@@ -49,7 +49,6 @@
     ZJSplashView *splashView = [[ZJSplashView alloc] initWithFrame:self.window.bounds];
     [self.window addSubview:splashView];
     
-    
     return YES;
 }
 

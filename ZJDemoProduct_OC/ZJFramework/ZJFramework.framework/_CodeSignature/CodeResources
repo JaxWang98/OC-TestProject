@@ -4,26 +4,56 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/ZJFramework.h</key>
+		<data>
+		2SiJbt3QiRQGi7EoE+ceF2zasIc=
+		</data>
 		<key>Headers/ZJFrameworkTest.h</key>
 		<data>
-		US0smp0+cW3pSxv1csj1h8MCgrs=
+		qOlXXD60Oo1ik2ZxG1ZUTerIjmU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uxFX823xieN7eqLRnK9kb1SdNX0=
+		WXvraQ9MGZOH768KGmVkIoFQmgY=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		DyVaZzPLFATLIpdWXNYXuarmt7w=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/ZJFramework.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2SiJbt3QiRQGi7EoE+ceF2zasIc=
+			</data>
+			<key>hash2</key>
+			<data>
+			w6owBbRBVmk+Jgqx8lvTqBHkUVrkQOzBFhh9+qJBR4Y=
+			</data>
+		</dict>
 		<key>Headers/ZJFrameworkTest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			US0smp0+cW3pSxv1csj1h8MCgrs=
+			qOlXXD60Oo1ik2ZxG1ZUTerIjmU=
 			</data>
 			<key>hash2</key>
 			<data>
-			qD0b3fSkqRmz9brMvPGxddt22wLtlRl5A4tqePbE2Ho=
+			yLNTrI6VbOsqzxAr4mcwtJDTiEVI+r2mJ4zF7tBzwX8=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DyVaZzPLFATLIpdWXNYXuarmt7w=
+			</data>
+			<key>hash2</key>
+			<data>
+			hdVSA+25N0GhQmJvU3UbTLI8hESm6forOQjwzWgPT9I=
 			</data>
 		</dict>
 	</dict>
